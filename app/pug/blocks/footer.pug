@@ -1,0 +1,7 @@
+footer.footer
+  h2 footer
+  .footer-container
+    nav.footer-nav
+      each item in menu
+        a(href= item.link).footer-nav--item.jsAncor
+          = item.name

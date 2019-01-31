@@ -1,0 +1,8 @@
+block header
+  header.header
+    h2 header
+    .header-container
+      nav.header-nav
+        each item in menu
+          a(href= item.link, class= item.class)
+            = item.name
