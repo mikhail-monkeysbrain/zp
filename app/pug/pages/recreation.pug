@@ -1,0 +1,37 @@
+extends ../base/layout
+
+block variables
+  - var title = 'Свадьба в Чехии'
+  - var type = 'Виды отдыха'
+  - var descr = 'Все больше и больше влюбленных из России и стран бывшего СНГ выбирают именно Прагу местом проведения священнодействия - регистрации и празднования брачной церемонии. Кто-то спешит сбежать от шумных родственников и "горьких" тостов, кто-то, ломая стереотипы, после многих лет гражданского брака, устраивает пышную вечеринку, кто-то с детства мечтал оказаться именно здесь в этот важный момент жизни. Важно лишь одно - какая Вам нужна свадьба в Чехии.'
+  - var folder = 'married'
+
+block header
+  include ../blocks/header
+block main
+  main.grid
+    .container
+      //breadcrumbs
+      include ../elements/breadcrumbs
+      // season-top
+      include ../blocks/seasons/season-top
+    //finder
+    include ../blocks/finder-horisontal
+    // single
+    h2 Свдьба в Праге
+    include ../blocks/sliders/married
+    // multy
+    h2
+      | Свдьба в средневековых
+      br
+      | замках Праги
+    include ../blocks/sliders/castle
+    // services
+    include ../blocks/services
+    // form
+    include ../blocks/form-footer
+  // footer
+  include ../blocks/footer
+
+block scripts
+  include ../base/scripts

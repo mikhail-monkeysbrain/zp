@@ -1,10 +1,42 @@
 extends ../base/layout
 
+block variables
+  - var title = 'Новый год в Чехии'
+  - var type = 'Сезоны'
+  - var descr = 'Празднование наступающего нового года в Чехии начнется еще в первых числах декабря и продлится до конца года. Город превратится в сказочную ярмарку: в каждом магазине откроются распродажи, а в барах будет рекой литься грог и глинтвейн. 26 декабря на улицы выйдут колядующие, и город охватит атмосфера грядущего праздника. 31 декабря все рестораны Праги будут открыты до утра, предлагая гостям увеселительные программы.'
+  - var folder = 'new-year'
+
 block header
   include ../blocks/header
 block main
   main.grid
-    h2 main
+    .container
+      //breadcrumbs
+      include ../elements/breadcrumbs
+      // season-top
+      include ../blocks/seasons/season-top
+    //finder
+    include ../blocks/finder-horisontal
+    // single
+    h2 Экскурсионные туры в Чехию
+    include ../blocks/sliders/single-tour
+    // multy
+    h2
+      | Комбинированные туры
+      br
+      | с отдыхом в двух странах
+    include ../blocks/sliders/multy-tour
+    // health
+    h2
+      | Курортное лечение
+      br
+      | и оздоровление в Чехии
+    include ../blocks/sliders/health-tour
+    // services
+    include ../blocks/services
+    // form
+    include ../blocks/form-footer
+  // footer
   include ../blocks/footer
 
 block scripts

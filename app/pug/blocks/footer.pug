@@ -1,7 +1,162 @@
 footer.footer
-  h2 footer
-  .footer-container
-    nav.footer-nav
-      each item in menu
-        a(href= item.link).footer-nav--item.jsAncor
-          = item.name
+    .footer__container
+        .footer__top.row
+            .col.col_n1
+                .footer__phone Единый многоканальный телефон 
+                    a(href="tel:+78124256542") +7 (812) 42-565-42
+                .row
+                    a.link-orange.tdu(href="javascript:void(0)")
+                        <i class="fab fa-whatsapp"></i>
+                        | WhatsApp
+                    a.link-orange.tdu(href="javascript:void(0)")
+                        <i class="fab fa-viber"></i>
+                        | Viber
+                    a.link-orange.tdu(href="tel:+79013068679")
+                        | +7 (901) 306-86-79
+
+            .col.col_n2
+                a.footer__mail(href="mailto: info@zlatapraga.ru") info@zlatapraga.ru
+                a.link-orange.tdu(href="javascript:void(0)") Карта сайта
+            .col.col_n3
+                select.selector(name="city")
+                    option(value="Санкт-Петербург") Санкт-Петербург
+                    option(value="Москва") Москва
+                    option(value="Екатеринбург") Екатеринбург
+                    option(value="Казань") Казань
+            .col.col_n4
+                .row.footer__widgets
+                    .link-orange.footer-currency Курс валюты
+                        span 1€ = 319,81Ft
+                        span 1€ = 319,81Ft
+                        span 1€ = 319,81Ft
+                    .link-orange.footer-weather Погода
+                        span
+                            <i class="fas fa-cloud-sun"></i>
+                            | +12
+        .footer__top--mobile
+            a(href="./").footer__logo
+                img(src="dist/img/footer-logo.png", alt="logo")
+            .footer__contacts
+                a(href="tel: +79000000000")
+                    img(src="dist/img/footer-phone.png", alt="phone")
+                a(href="tel: +79000000000")
+                    img(src="dist/img/whatsapp.png", alt="whatsapp")
+                a(href="tel: +79000000000")
+                    img(src="dist/img/viber.png", alt="viber")
+        .footer__address
+            i.fas.fa-map-marker-alt
+            | Санкт-Петербург, ул.Казанская, 5
+        .footer__nav--mobile
+            ul
+                li
+                    a(href="javascript:void(0)") О компании
+                li
+                    a(href="javascript:void(0)") Туры
+                li
+                    a(href="javascript:void(0)") Все о Чехии
+                li
+                    a(href="javascript:void(0)") Отели
+                li
+                    a(href="javascript:void(0)") Экскурсии
+                li
+                    a(href="javascript:void(0)") Виза
+
+    .hr
+    .footer__container
+        .footer__middle.row
+            .col.col_n1
+                .row
+                    nav.footer__nav
+                        .link-orange О компании
+                        a(href="javascript:void(0)") О компании
+                        a(href="javascript:void(0)") Блог
+                        a(href="javascript:void(0)") Наша команда
+                        a(href="javascript:void(0)") Почему выбирают нас
+                        a(href="javascript:void(0)") Наши награды
+                        a(href="javascript:void(0)") СМИ о нас
+                        a(href="javascript:void(0)") Финансовые гарантии и СОУТ
+                    nav.footer__nav
+                        .link-orange Туры
+                        a(href="javascript:void(0)") Майские праздники
+                        a(href="javascript:void(0)") Туры в Прагу
+                        a(href="javascript:void(0)") Туры в Будапешт
+                        a(href="javascript:void(0)") Лечение в Чехении
+                        a(href="javascript:void(0)") Лечение в Венгрии
+                        a(href="javascript:void(0)") Лечение в Словакии
+                        a(href="javascript:void(0)") Свадьба в Чехии
+                        a(href="javascript:void(0)") Образование в Чехии
+                        a(href="javascript:void(0)") Языковые лагеря
+                        a(href="javascript:void(0)") Отдых на природе
+                        a(href="javascript:void(0)") Новый год в Чехии
+                        a(href="javascript:void(0)") Каникулы в Чехи
+                        a(href="javascript:void(0)") Фильтр туров
+            .col.col_n2
+                nav.footer__nav
+                    .link-orange Все о Чехии
+                    a(href="javascript:void(0)") О Чехии
+                    a(href="javascript:void(0)") Города Чехии
+                    a(href="javascript:void(0)") FAQ
+                    a(href="javascript:void(0)") Статьи
+                    a(href="javascript:void(0)") Показания к лечению
+                    a(href="javascript:void(0)") Курорты Чехии
+                    a(href="javascript:void(0)") Курорты Словакии
+                    a(href="javascript:void(0)") Курорты Венгрии
+                    a(href="javascript:void(0)") Курорты Словении
+                    a(href="javascript:void(0)") Курорты Литвы
+                    a(href="javascript:void(0)") Лечение в Чехии
+            .col.col_n3
+                nav.footer__nav
+                    .link-orange Отели
+                    a(href="javascript:void(0)") Отели Праги
+                    a(href="javascript:void(0)") Отели Будапешта
+                    a(href="javascript:void(0)") Отели и санатории курортов
+                    a(href="javascript:void(0)") Отели в горах
+                    a(href="javascript:void(0)") Отели на озерах
+                br
+                nav.footer__nav
+                    .link-orange Экскурсии
+                    a(href="javascript:void(0)") Экскурсии в Чехии
+                    a(href="javascript:void(0)") Экскурсии в Венгрииии курортов
+                    a(href="javascript:void(0)") Экскурсии в Австрии
+                    a(href="javascript:void(0)") Экусурсионые объекты
+            .col.col_n4
+                nav.footer__nav
+                    .link-orange Виза
+                    a(href="javascript:void(0)") Общая информация
+                    a(href="javascript:void(0)") Виза в Чехию
+                    a(href="javascript:void(0)") Виза в Словакию
+                    a(href="javascript:void(0)") Виза в Венгрию
+                    a(href="javascript:void(0)") Заграничный паспорт
+                    a(href="javascript:void(0)") Страхование
+
+            .footer__soical.footer__soical--absolute
+                a(href="javascript:void(0)").footer__soical__item.footer__soical--tg
+                    <i class="fab fa-telegram-plane"></i>
+                a(href="javascript:void(0)").footer__soical__item.footer__soical--inst
+                    <i class="fab fa-instagram"></i>
+                a(href="javascript:void(0)").footer__soical__item.footer__soical--fb
+                    <i class="fab fa-facebook-f"></i>
+                a(href="javascript:void(0)").footer__soical__item.footer__soical--vk
+                    <i class="fab fa-vk"></i>
+        .footer__middle--mobile
+            a.full-site(href="javascript:void(0)") Полная версия сайта
+            .footer__soical
+                a(href="javascript:void(0)").footer__soical__item.footer__soical--tg
+                    <i class="fab fa-telegram-plane"></i>
+                a(href="javascript:void(0)").footer__soical__item.footer__soical--inst
+                    <i class="fab fa-instagram"></i>
+                a(href="javascript:void(0)").footer__soical__item.footer__soical--fb
+                    <i class="fab fa-facebook-f"></i>
+                a(href="javascript:void(0)").footer__soical__item.footer__soical--vk
+                    <i class="fab fa-vk"></i>
+    .hr
+    .footer__container
+        .footer__bottom
+            p Вся информация дана в рекламных целях и не является публичной офертой. Вся информация, размещенная на сайте, является собственностью ООО "Злата Прага". Копирование, передача, распространение данной информации возможно только с согласия ООО "Злата Прага".
+.footer__container
+    .footer__after
+        p © Официальный сайт, ООО "Злата Прага", 2013
+        p Разработка - 
+            a(href="javascript:void(0)") Siberia | Brand Identity & Web
+        p Верстка & Программинг - 
+            a(href="javascript:void(0)") Artrix

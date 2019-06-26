@@ -1,0 +1,39 @@
+extends ../base/layout
+
+block variables
+  - var title = 'Обучение'
+  - var type = 'Агенствам'
+  - var descr = 'Чтобы продавать много, легко и быстро – нужно быть профессионалом в своем деле. В равных долях нужно владеть техниками продаж и знать сам турпродукт, его преимущества, сильные и слабые стороны.'
+  - var descr2 = 'Как получить нужную для работы с туристами информацию?'
+  - var descr3 = 'Можно потратить несколько бессонных ночей на изучение необходимой информации, пробежать множество форумов по туризму, перелистнуть сотни страниц каталогов, справочников и рекламных брошюр, чтобы начать разбираться в нюансах отдыха в той или иной стране. А можно пройти специальную подготовку по турпродукту у туроператора, что многие годы успешно работает по данному направлению. Вы сэкономите время, получите ценную и актуальную информацию у профессионалов турбизнеса, имеющих за своими плечами многолетний опыт успешной работы.'
+  - var folder = 'learn'
+
+block header
+  include ../blocks/header
+block main
+  main.grid
+    .container
+      //breadcrumbs
+      include ../elements/breadcrumbs
+      // season-top
+      include ../blocks/seasons/no-aside
+    // single
+    h2 Презентации
+    include ../blocks/sliders/presentation
+    // multy
+    h2
+      | Рекламные и инфотуры
+    include ../blocks/sliders/infotour
+    // health
+    h2
+      | Вебинары
+    include ../blocks/sliders/webinar
+    // services
+    include ../blocks/services
+    // form
+    include ../blocks/form-footer
+  // footer
+  include ../blocks/footer
+
+block scripts
+  include ../base/scripts

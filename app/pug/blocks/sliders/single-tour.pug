@@ -1,0 +1,26 @@
+section.single-tour.jsSliderCards
+    - var single = 10
+    - for (var single_i=1; single_i<=single; single_i++)
+        .tour-card
+            .row
+                .tour-card__heading Прага хит
+                .tour-card__price от 150000р.
+            .tour-card__days
+                | Дни заезда: 
+                span любые
+            .tour-card__duration
+                | Продолжительность: 
+                span от 3-х ночей
+            .row
+                .tour-card__include
+                    i Включено в стоимость: 
+                    span Перелет
+                    span Отель
+                .tour-card__more
+                    i Дополнительно: 
+                    span Трансфер
+                    span Виза
+                    span Экскурсии
+                    span Страховки
+            a(href="javascript:void(0)").tour-card__buy Купить
+            img(src="./dist/img/t-1.jpg", alt="Прага хит")

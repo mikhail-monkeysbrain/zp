@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'UkrainianBrushScript';
+    src: url('UkrainianBrushScript.eot');
+    src: url('UkrainianBrushScript.eot?#iefix') format('embedded-opentype'),
+        url('UkrainianBrushScript.woff2') format('woff2'),
+        url('UkrainianBrushScript.woff') format('woff'),
+        url('UkrainianBrushScript.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+

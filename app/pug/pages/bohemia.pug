@@ -1,0 +1,43 @@
+extends ../base/layout
+
+block variables
+  - var title = 'Чехия'
+  - var type = 'Направления'
+  - var descr = 'Старейшая европейская столица, город Прага, - признанный культурный центр Восточной Европы, средоточие множества исторических памятников. Вы можете посетить Вышеград и Сокровищницу Лореты, Кржижиковы фонтаны, древнейшее Олшанское кладб ище, побывать с детьми в зоопарке и музее игрушек, посетить завод по производству пива и, конечно, продегустировать знаменитый напиток в одном из тысячи уютных чешских ресторанчиков.'
+  - var folder = 'bohemia'
+
+block header
+  include ../blocks/header
+block main
+  main.grid
+    .container
+      //breadcrumbs
+      include ../elements/breadcrumbs
+      // season-top
+      include ../blocks/seasons/season-top
+    //finder
+    include ../blocks/finder-horisontal
+    // single
+    h2 Экскурсионные туры в Чехию
+    include ../blocks/sliders/single-tour
+    // multy
+    h2
+      | Комбинированные туры
+      br
+      | с отдыхом в двух странах
+    include ../blocks/sliders/multy-tour
+    // health
+    h2
+      | Курортное лечение
+      br
+      | и оздоровление в Чехии
+    include ../blocks/sliders/health-tour
+    // services
+    include ../blocks/services
+    // form
+    include ../blocks/form-footer
+  // footer
+  include ../blocks/footer
+
+block scripts
+  include ../base/scripts

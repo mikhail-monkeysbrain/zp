@@ -1,0 +1,32 @@
+section.health-tour.jsSliderCards
+
+    - var health = 10
+    - for (var health_i=1; health_i<=health; health_i++)
+        .tour-card.tour-card--health
+            .row
+                .tour-card__heading
+                    // TODO повесить перенос на стили
+                    | Карловы Вары
+                    br
+                    | без перелета
+                .tour-card__price от 150000р.
+            p.tour-card__description Специализация: Заболевания опорно-двигательного аппарата, Заболевания органов дыхания, Заболевания сердечно-сосудистой системы, Курортное лечение, Нарушение обмена веществ, Неврологические заболевания, Реабилитация после лечения онкологии
+            .tour-card__days
+                | Дни заезда: 
+                span любые
+            .tour-card__duration
+                | Продолжительность: 
+                span от 3-х ночей
+            .row
+                .tour-card__include
+                    i Включено в стоимость: 
+                    span Перелет
+                    span Отель
+                .tour-card__more
+                    i Дополнительно: 
+                    span Трансфер
+                    span Виза
+                    span Экскурсии
+                    span Страховки
+            a(href="javascript:void(0)").tour-card__buy Купить
+            img(src="./dist/img/spa-1.jpg", alt="Прага хит")

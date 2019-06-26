@@ -1,0 +1,17 @@
+section.form-footer
+    .form-footer__container
+        .form-footer__heading
+            h2 Остались вопросы?
+            p.form-footer__heading--description
+                | Заполните форму и мы ответим Вам
+                br
+                | в течение 10 минут
+        form.form-footer__form
+            input(type="text" name="fromFooterName" placeholder="Ваше имя*")
+            input.jsInputMail(type="email" name="fromFooterMail" placeholder="Ваш Email*")
+            input.jsInputPhone(type="text" name="fromFooterPhone" placeholder="Ваш телефон*")
+            textarea(name="fromFooterQuest" placeholder="Ваш вопрос*")
+            span * - поля обязательные для заполнения
+            span Нажимая конпку Отправить, вы даете согласие 
+                a(href="javascript:void(0)") на обработку персональных даных
+            button.form-submit.btn.btn--orange(type="submit") Отправить

@@ -1,0 +1,122 @@
+.card-top
+    display flex
+    justify-content space-between
+
+.top-about
+    width calc(100% - 310px)
+    flex-grow 1
+    &--learn
+        p
+            padding-bottom 0 !important
+    &--top-pic
+        display flex
+        justify-content space-between
+        align-items center
+        padding 30px 0
+        +media(1279px)
+            display none
+        img
+            max-width calc(50% - 15px)
+
+    &--slider-pic
+        display flex
+        justify-content space-between
+        align-items center
+        margin-bottom 48px
+        div
+            display flex !important
+            justify-content center
+            align-items center
+            padding 0 15px
+            +media(1279px)
+                padding 0
+
+.left-aside
+    width 280px
+    flex-shrink 0
+    padding 24px 0
+    box-shadow 0 0 8px 1px rgba(171, 171, 171, 0.18)
+    border-radius 3px
+    background-color #ffffff
+    margin-right 30px
+    padding-right 10px
+    position relative
+    +media(1600px)
+        width 210px
+    +media(1279px)
+        display none
+    &::after
+        content: ''
+        display block
+        width 20px
+        height 100%
+        background #fff
+        position absolute
+        right 10px
+        top 0
+
+    &__heading
+        padding-left 7px
+        color $orange
+        font-size 18px
+        font-weight 700
+        +media(1600px)
+            font-size: 16px
+
+    &__list
+        list-style: none
+        padding-left 0
+        max-height: 240px
+        overflow: overlay
+        position relative
+        padding-bottom 20px
+        +media(1600px)
+            max-height: 208px
+
+    &__shadow
+        width 100%
+        height 30px
+        background: linear-gradient(to bottom,rgba(255,255,255,0) 0%, #FFF 55%,#fff 100%)
+        margin-top -40px
+        position relative
+        text-align center
+        &:nth-of-type(4)
+            display none
+        img
+            width 25px
+            height 9px
+            margin 0 auto
+
+    &__item
+        font-size 16px
+        font-weight 400
+        padding-left 0
+        &:hover
+            a
+                color: $orange
+                text-shadow: 0 0 1px $orange
+        +media(1600px)
+            font-size: 14px
+        a
+            color #363535
+            padding-left 21px
+            transition: $fast
+        &.left-aside__item--active
+            background #ffe2c1
+            font-weight 700
+
+.slider__5
+    +media(1279px)
+        width calc(100% + 30px)
+        left -15px
+        margin-top 10px
+    img
+        width 280px
+        height 176px
+        object-fit: cover
+        +media(1600px)
+            width 196px
+            height 117px
+        +media(1279px)
+            width 100%
+            height auto

@@ -1,0 +1,16 @@
+- var topAboutSlider = 2
+
+section.card-top
+    include ../aside/top-aside
+
+    section.top-about
+        h1 #{title}
+        .top-about--top-pic
+            img(src="./dist/img/" + folder + "/pr-1.jpg", alt="Новый год в Чехии 1")
+            img(src="./dist/img/" + folder + "/pr-2.jpg", alt="Новый год в Чехии 2")
+        .top-about--slider-pic.slider__5
+            while topAboutSlider < 10
+                div
+                    img(src="./dist/img/" + folder + "/pr-" + topAboutSlider++ + ".jpg", alt="")
+        p #{descr}
+        a.read-more(href="javascript:void(0)") Читать подробнее

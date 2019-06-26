@@ -1,8 +1,8 @@
-let 
+let
     gulp = require('gulp'),
     gp = require('gulp-load-plugins')(),
     browserSync = require('browser-sync').create();
-    
+
 gulp.task('serve', () => {
     browserSync.init({
         server: {

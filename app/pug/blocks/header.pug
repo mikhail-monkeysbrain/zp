@@ -1,8 +1,16 @@
 block header
   header.header
-    h2 header
     .header-container
-      nav.header-nav
+      a.header--logo(href="./")
+        img(src="./dist/img/logo.png", alt="logo")
+      a.header--phone(href="tel: +78124256542") +7 (812) 42-565-42
+      .header--location
+        i.fas.fa-map-marker-alt
+        | Санкт-Петербург
+      .header--nav__show
         each item in menu
-          a(href= item.link, class= item.class)
-            = item.name
+          a(href= item.link, class="header--icon i__" +  item.class)
+      .header--nav-toggler.header--icon
+        i.fas.fa-bars
+
+  include ../elements/main-nav

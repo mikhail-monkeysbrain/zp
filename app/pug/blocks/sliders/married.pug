@@ -1,0 +1,26 @@
+section.multy-tour.jsSliderCards
+    - var multy = 10
+    - for (var multy_i=1; multy_i<=multy; multy_i++)
+        .tour-card
+            .row
+                .tour-card__heading Свадьба в Праге в Старогородской Ратуше
+                .tour-card__price от 850€
+            .tour-card__days
+                | Дни заезда: 
+                span пн, вт, ср, чт, пт
+            .tour-card__duration
+                | Продолжительность: 
+                span от 5-х ночей
+            .row
+                .tour-card__include
+                    i Включено в стоимость: 
+                    span Перелет
+                    span Отель
+                .tour-card__more
+                    i Дополнительно: 
+                    span Трансфер
+                    span Виза
+                    span Экскурсии
+                    span Страховки
+            a(href="javascript:void(0)").tour-card__buy Купить
+            img(src="./dist/img/married/m-1.jpg", alt="Прага хит")

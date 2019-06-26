@@ -1,5 +1,277 @@
 @import '../core/variables.styl';
 
 .footer
-  width 100%
-  height: $heightFooter
+	width 100%
+	background $gray
+	margin-top 100px
+	+media(1279px)
+		margin-top 50px
+
+	.hr
+		width 100%
+		height 1px
+		background #5b5b5b
+		margin 47px 0 35px
+		+media(1025px)
+			margin 15px 0
+
+	a
+		color #ffffff
+		transition: $fast
+		&:hover
+			color: $orange
+		+media(1600px)
+			font-size: 13px
+
+	.col
+		display flex
+		flex-direction: column
+		align-items flex-start
+		justify-content flex-start
+		&.col_n1
+			width 456px
+			+media(1600px)
+				width 400px
+			+media(1279px)
+				width 370px
+				margin-right 20px
+				flex-shrink: 0
+			.row
+				width 100%
+				display flex
+				justify-content space-between
+				align-items center
+		&.col_n2
+			width 255px
+			+media(1600px)
+				width 165px
+		&.col_n3
+			width 230px
+		&.col_n4
+			width 280px
+
+	.row
+		display flex
+		justify-content space-between
+
+	a.link-orange
+		color $orange
+		i
+			color #ffffff
+			margin-right 10px
+			font-size: 20px
+
+	&__container
+		width 1520px
+		max-width calc(100% - 90px)
+		margin 0 auto
+		+media(1279px)
+			max-width calc(100% - 30px)
+
+	&__top
+		width 100%
+		display flex
+		justify-content space-between
+		align-items center
+		padding-top 52px
+		+media(1025px)
+			display none !important
+
+	&__middle
+		position relative
+		+media(1025px)
+			display none !important
+		& + .hr
+			margin 30px 0 5px
+
+
+	&__bottom
+		p
+			color #999999
+			font-size 12px
+			font-weight 400
+			+media(1279px)
+				font-size: 10px
+			+media(1025px)
+				font-size: 8px
+				line-height 1.2
+
+	&__phone
+		color #fefefe
+		font-size 16px
+		font-weight 400
+		line-height 17.06px
+		padding-bottom 18px
+		+media(1600px)
+			font-size: 13px
+
+	&__mail
+		padding-bottom 18px
+		+media(1600px)
+			font-size: 13px
+
+	&__widgets
+		width 255px
+		display flex
+		justify-content space-between
+		align-items flex-start
+		padding-right 16px
+
+	&__nav
+		display flex
+		flex-direction: column
+		justify-content flex-start
+		align-items flex-start
+		align-self: flex-start
+		a
+			color #cccccc
+			font-size 14px
+			font-weight 400
+			+media(1279px)
+				font-size: 11px !important
+		.link-orange
+			font-size 14px
+			font-weight 400
+			+media(1279px)
+				font-size: 11px !important
+
+	&__soical
+		right 0
+		bottom 0
+		width 210px
+		display flex
+		justify-content space-between
+		align-items center
+		&--absolute
+			position absolute
+		&__item
+			width 37px
+			height 37px
+			background $orange
+			border-radius: 50%
+			display flex
+			justify-content center
+			align-items center
+			+media(1279px)
+				width 27px
+				height 27px
+			&:hover
+				i
+					color #cccccc
+			i
+				font-size: 21px
+				transition: $fast
+				+media(1279px)
+					font-size: 16px
+
+.footer-currency,
+.footer-weather
+	font-size 14px
+	font-weight 400
+	line-height 13px
+	span
+		display block
+		color #5b5b5b
+		font-size 14px
+		font-weight 400
+		line-height 17.06px
+		margin-top 6px
+
+.footer-weather
+	span
+		font-size 20px
+		font-weight 400
+		line-height 13px
+		margin-top 13px
+		i
+			font-size: 18px
+			margin-right 9px
+
+.footer__after
+	width 1000px
+	background #ffffff
+	display flex
+	justify-content space-between
+	+media(1279px)
+		width 920px
+		margin 0 auto
+	+media(1025px)
+		width 260px
+		display flex
+		flex-direction: column
+		align-items center
+		text-align center
+	p,
+	a
+		font-size: 12px
+		margin 0
+		padding 0
+		line-height 1
+		padding-bottom 10px
+		color #707070
+		+media(1279px)
+			font-size: 11px
+		+media(1025px)
+			font-size: 9px
+	a
+		text-decoration underline
+		color #707070
+
+
+.footer__top
+	&--mobile
+		display none
+		+media(1025px)
+			display flex
+			justify-content space-between
+			align-items center
+			padding-top 15px
+
+.footer
+	&__logo
+		width 150px
+	&__contacts
+		display flex
+		justify-content space-between
+		align-items center
+		width 110px
+		img
+			width 28px
+	&__address
+		display none
+		+media(1025px)
+			color #ffffff
+			font-size: 13px
+			padding 15px 0
+			i
+				color #ffffff
+				margin-right 5px
+	&__nav
+		&--mobile
+			display none
+			+media(1025px)
+				ul
+					display flex
+					flex-wrap: wrap
+					list-style: none
+					padding-left 0
+				li
+					width 50%
+				a
+					color $orange
+	&__middle
+		&--mobile
+			display none
+			+media(1025px)
+				display flex
+				justify-content space-between
+				align-items center
+				.footer__soical
+					width 150px
+
+
+.full-site
+	color $orange !important
+	font-size: 13px
+	text-decoration underline
+

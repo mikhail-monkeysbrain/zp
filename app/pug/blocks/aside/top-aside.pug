@@ -1,0 +1,16 @@
+aside.left-aside
+	each item in leftAside
+		.left-aside__heading
+			= item.name
+		ul.left-aside__list
+			each items in item.items
+				if (items.name === 'Новый год')
+					li.left-aside__item.left-aside__item--active
+						a(href="javascript:void(0)")
+							= items.name
+				else
+					li.left-aside__item
+						a(href="javascript:void(0)")
+							= items.name
+		.left-aside__shadow
+			img(src="dist/img/down-arrow.png", alt="down")

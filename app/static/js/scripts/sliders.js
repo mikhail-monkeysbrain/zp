@@ -1,0 +1,110 @@
+function _sliderImages () {
+    $('.slider__5').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        centerMode: true,
+        variableWidth: true,
+        centerPadding: '15px',
+        nextArrow: '<button class="btn--prev"></button>',
+        prevArrow: '<button class="btn--next"></button>',
+        responsive: [
+            {
+              breakpoint: 1280,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                variableWidth: false,
+                dots: true,
+                centerMode: false,
+                adaptiveHeight: true
+              }
+            }
+          ]
+      });
+}
+
+function _sliderCards () {
+  $('.jsSliderCards').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    centerMode: true,
+    variableWidth: true,
+    dots: true,
+    centerPadding: '15px',
+    nextArrow: '<button class="btn--prev"></button>',
+    prevArrow: '<button class="btn--next"></button>',
+    responsive: [
+        {
+          breakpoint: 1280,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            infinite: true,
+            dots: true,
+            centerMode: false,
+          }
+        },
+        {
+          breakpoint: 1025,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+            centerMode: true,
+          }
+        }
+      ]
+  });
+  $('.jsSliderCardsLearn').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    centerMode: false,
+    variableWidth: false,
+    dots: true,
+    centerPadding: '15px',
+    nextArrow: '<button class="btn--prev"></button>',
+    prevArrow: '<button class="btn--next"></button>',
+    responsive: [
+        {
+          breakpoint: 1600,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true,
+            centerMode: false,
+          }
+        },
+        {
+          breakpoint: 1280,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true,
+            centerMode: false,
+          }
+        },
+        {
+          breakpoint: 1025,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+            centerMode: true,
+          }
+        }
+      ]
+  });
+}
+
+$(document).ready(
+    _sliderImages(),
+    _sliderCards()
+)
