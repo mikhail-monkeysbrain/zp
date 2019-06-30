@@ -2,4 +2,6 @@ section.breadcrumbs
     a.breadcrumbs--item(href="./") Главная
     if type
         a.breadcrumbs--item(href="javscript:void(0)") #{type}
+    if subtype
+        a.breadcrumbs--item(href="javscript:void(0)") #{subtype}
     a.breadcrumbs--item #{title}

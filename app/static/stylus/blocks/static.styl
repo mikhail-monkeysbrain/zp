@@ -90,6 +90,37 @@
                 height 6px
                 margin-top 6px
 
+.block-static
+    width 100%
+    max-width calc(100% - 465px)
+    padding-bottom 40px
+    margin-left 465px
+    +media(1600px)
+        max-width calc(100% - 340px)
+        margin-left 340px
+    +media(1279px)
+        max-width 100%
+        margin-left 0
+    iframe
+        margin 30px 0
+    &--table
+        width 940px
+        +media(1600px)
+            width 840px
+        +media(1279px)
+            width 100%
+    & + .btn
+        margin -40px auto 40px
+        font-weight 700
+
+.inner-link
+    display block
+    color #363535
+    font-size 16px
+    font-weight 700
+    text-decoration underline
+
+
 .table
     display flex
     flex-direction: column
@@ -102,17 +133,23 @@
         display flex
         justify-content space-between
         width 100%
+        &--small
+            .td
+                height 55px
+                text-align center
         .td
             background $orange !important
             color #ffffff
             font-size: 20px
             font-weight: 700
             line-height: 35px
-            height 64px
+            min-height 64px
+            &:first-child
+                align-self: center
             +media(1600px)
-                height 52px
+                min-height 52px
             +media(1279px)
-                height 44px
+                min-height 44px
                 font-size: 14px
     &__row
         display flex
@@ -120,7 +157,7 @@
         width 100%
     &--x3
         .td
-            height 85px
+            min-height 85px
             width 328px
             flex-shrink: 0
             display flex
@@ -130,9 +167,9 @@
             margin-bottom 1px
             background #f0f0f0
             +media(1600px)
-                height 59px
+                min-height 59px
             +media(1279px)
-                height 43px
+                min-height 43px
                 width 293px
                 font-size: 14px
             +media(1010px)
@@ -156,24 +193,31 @@
                 +media(1010px)
                     padding-left 7px
                     width calc(50% - 3px)
-
-.block-static
-    width 100%
-    max-width calc(100% - 465px)
-    padding-bottom 40px
-    margin-left 465px
-    +media(1600px)
-        max-width calc(100% - 340px)
-        margin-left 340px
-    +media(1279px)
-        max-width 100%
-        margin-left 0
-    iframe
-        margin 30px 0
-
-.inner-link
-    display block
-    color #363535
-    font-size 16px
-    font-weight 700
-    text-decoration underline
+        &--small
+            width 940px
+            margin-bottom 0
+            +media(1600px)
+                width 840px
+            +media(1279px)
+                width 100%
+            .td
+                min-height 48px
+                width 220px
+                font-size: 16px
+                line-height 1.2
+                +media(1600px)
+                    width 195px
+                +media(1279px)
+                    width 25%
+                    min-height 40px
+                    font-size: 13px
+                +media(1010px)
+                    min-height 35px
+                &:first-child
+                    width 500px
+                    padding-left 30px
+                    +media(1600px)
+                        width 450px
+                        padding-left 20px
+                    +media(1279px)
+                        width 50%

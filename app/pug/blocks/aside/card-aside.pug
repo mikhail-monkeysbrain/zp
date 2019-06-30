@@ -1,5 +1,33 @@
 aside.left-aside.left-aside--card
-	if from
+	if healing
+		.col.col--revert
+			.row.nopadding
+				.left-aside__heading
+					| Краткая информация
+				.like Запомнить
+			span
+				| Дни заезда: #{days}
+			span
+				| Продолжительность: #{long}
+
+		.col.col--revert
+			.left-aside__heading
+				| Экскурсионные объекты:
+			ul.orange-list
+				each value in descr
+					li
+						| #{from}
+						span
+						=value
+
+		.left-aside__heading
+			a.btn.btn--orange(href="javascript:void(0)") Купить
+
+		.print Версия для печати
+
+
+
+	else if from
 		.col.col--revert
 			.row.nopadding
 				.left-aside__heading
@@ -26,6 +54,7 @@ aside.left-aside.left-aside--card
 						span
 							=value
 
+
 		.left-aside__heading
 			.row
 				.string Цена: 
@@ -33,6 +62,8 @@ aside.left-aside.left-aside--card
 			a.btn.btn--orange(href="javascript:void(0)") Купить
 
 		.print Версия для печати
+
+
 	else if site
 		.col.col--revert
 			.row.nopadding

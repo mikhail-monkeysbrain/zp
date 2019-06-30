@@ -13,7 +13,67 @@ section.card-top.card-top--revert
                 div
                     img(src="./dist/img/" + folder + "/pr-" + topAboutSlider++ + ".jpg", alt="")
 
-if map
+if healing
+    .block-static.block-static--table
+        h3 Описание объекта
+        each val in description
+            p
+                =val
+        br
+        h3 Как добраться
+        .table.table--x3.table--x3--small
+            .table__heading.table__heading--small
+                .td Название
+                .td Дни
+                    br
+                    | проведения
+                .td Стоимость
+                    br
+                    | (за 1 человека)
+            .table__row
+                .td Чешский Крумлов и замок Глубока над Влтавой (КВ,МЛ,Ях,ФЛ)(T)(Е)(I)
+                .td пн, вт, ср, чт, пт
+                .td 1000€
+            .table__row
+                .td Бамберг (КВ,МЛ,Ях,ФЛ)(T)(Е)(I)
+                .td пн, вт, ср, чт, пт
+                .td 1000€
+            .table__row
+                .td Чешский Крумлов и замок Глубока над Влтавой (КВ,МЛ,Ях,ФЛ)(T)(Е)(I)
+                .td пн, вт, ср, чт, пт
+                .td 1000€
+            .table__row
+                .td Бамберг (КВ,МЛ,Ях,ФЛ)(T)(Е)(I)
+                .td пн, вт, ср, чт, пт
+                .td 1000€
+            .table__row
+                .td Чешский Крумлов и замок Глубока над Влтавой (КВ,МЛ,Ях,ФЛ)(T)(Е)(I)
+                .td пн, вт, ср, чт, пт
+                .td 1000€
+            .table__row
+                .td Бамберг (КВ,МЛ,Ях,ФЛ)(T)(Е)(I)
+                .td пн, вт, ср, чт, пт
+                .td 1000€
+            .table__row
+                .td Чешский Крумлов и замок Глубока над Влтавой (КВ,МЛ,Ях,ФЛ)(T)(Е)(I)
+                .td пн, вт, ср, чт, пт
+                .td 1000€
+            .table__row
+                .td Бамберг (КВ,МЛ,Ях,ФЛ)(T)(Е)(I)
+                .td пн, вт, ср, чт, пт
+                .td 1000€
+            .table__row
+                .td Чешский Крумлов и замок Глубока над Влтавой (КВ,МЛ,Ях,ФЛ)(T)(Е)(I)
+                .td пн, вт, ср, чт, пт
+                .td 1000€
+            .table__row
+                .td Бамберг (КВ,МЛ,Ях,ФЛ)(T)(Е)(I)
+                .td пн, вт, ср, чт, пт
+                .td 1000€
+        br
+    a.btn.btn--orange.btn--big(href="javascript:void(0)") Купить тур
+
+else if map
     .block-static
         h3 Описание объекта
         each val in description
@@ -26,7 +86,9 @@ if map
         h3 Входит в экскурсионные программы:
         a.inner-link(href="javascript:void(0)") Бельгия, Нидерланды, Люксембург (E)(H)
         a.inner-link(href="javascript:void(0)") Бенилюкс (КВ,МЛ,Ях,ФЛ)(E, I)
+
 else
+
     .block-static
         h3 Описание экскурсии
         each val in description
