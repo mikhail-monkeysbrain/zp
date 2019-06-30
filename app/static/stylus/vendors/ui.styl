@@ -13,7 +13,7 @@
         padding 13px
     +media(1279px)
         width 310px
-    +media(1025px)
+    +media(1010px)
         width 100%
         height 35px
         padding 9px 14px
@@ -31,10 +31,19 @@
         +media(1279px)
             width 170px
 
+.ui-menu .ui-menu-item-wrapper
+    width calc(100% - 20px)
+
 .ui-widget.ui-widget-content
     height auto
     padding 10px 0 0
-    width 280px
+    width 280px !important
+    max-height 280px !important
+    +media(1600px)
+        width 200px !important
+        max-height 200px !important
+    +media(1279px)
+        width calc(100vw - 47px)!important
 
 .ui-button.ui-state-active:hover, .ui-button:active, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active
     border: 1px solid #f7901e;
@@ -370,5 +379,249 @@
         transform: scaleY(-1) !important
 
 .ui-datepicker .ui-datepicker-next, .ui-datepicker .ui-datepicker-prev
-    +media(1025px)
+    +media(1010px)
         display none !important
+
+.ui-icon-triangle-1-s,
+.ui-button .ui-icon
+    background url(../img/arrow-gray.png) center no-repeat !important
+    background-size auto !important
+    transform: rotate(90deg) !important
+    transition: $fast
+    .footer &
+        background url(../img/down-arrow-corner.png) center no-repeat !important
+        background-size auto !important
+        transform: rotate(0) !important
+
+.ui-selectmenu-button-open span.ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s
+    transform: rotate(-90deg) !important
+    .footer &
+        transform: rotate(180deg) !important
+
+.hasDatepicker
+    background #fff url(../img/calendar.png) 95% center no-repeat
+    background-size auto
+
+.ui-datepicker table
+    +media(1279px)
+        width 308px
+
+.drp-calendar.left.single
+    padding 0
+    width 100%
+
+.show-calendar
+    width 280px !important
+
+.daterangepicker .drp-calendar.left .calendar-table
+    padding-right 0
+
+.daterangepicker .calendar-table table
+    width calc(100% + 9px)
+
+.daterangepicker .calendar-table table
+    border-collapse: initial
+
+.daterangepicker .table-condensed td.available
+    color #5d5d5d
+    font-size 17px
+    padding 0
+    font-weight 400
+    line-height 35px
+    width 39px !important
+    height 39px !important
+    border-collapse: inherit
+    border-radius: 50%
+    &.active
+        color #ffffff
+        background $orange
+
+.daterangepicker .table-condensed thead tr:first-child
+    background $orange
+    height 39px
+    th
+        border-radius: 0
+    .available
+        span
+            display none
+        &.next,
+        &.prev
+            background url(../img/arrow.png) center no-repeat
+            background-size 12px
+        &.next
+            transform: scale(-1)
+    .month
+        color #ffffff
+        font-size 17px
+        font-weight 700
+        line-height 35px
+
+.daterangepicker .table-condensed thead
+    th
+        color #5d5d5d
+        font-size 17px
+        font-weight 400
+        line-height 35px
+        &:nth-last-child(1),
+        &:nth-last-child(2)
+            color #f7901e
+
+.daterangepicker
+    margin-top 0
+    &::before,
+    &::after
+        display none
+
+.daterangepicker.show-calendar .ranges
+    margin-top 0
+
+
+
+.select2-results__options::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: transparent;
+    border: 1px solid transparent;
+    box-shadow: inset 0 0 0px 2px #b1b1b1;
+}
+
+.select2-results__options::-webkit-scrollbar
+{
+	width: 4px; 
+}
+
+.select2-results__options::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #999;
+    height 13px
+}
+
+span.select2.select2-container
+    width 280px !important
+    height 50px !important
+    outline: none
+    +media(1600px)
+        width 200px !important
+    +media(1279px)
+        width 310px !important
+    +media(1010px)
+        width 100% !important
+    .footer &
+        width 230px !important
+        height 36px !important
+
+.select2 *
+    outline: none
+
+.select2-selection
+    height 50px !important
+    +media(1279px)
+        height 45px !important
+    .footer &
+        height 36px !important
+        background transparent
+        border-radius: 0
+        border: 0
+        border-bottom: 1px solid $orange
+
+.select2-container--default .select2-selection--single .select2-selection__rendered
+    line-height 50px
+    padding-left 13px
+    +media(1279px)
+        line-height 42px !important
+    .footer &
+        line-height 36px !important
+        color $orange
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
+    height 50px
+    +media(1279px)
+        height 45px !important
+    .footer &
+        height 36px !important
+
+.footer
+    .select2-container--open .select2-dropdown--below
+        border: 0
+    span.select2-dropdown.select2-dropdown--below
+        background transparent
+
+
+.select2-container--default .select2-results__option--highlighted
+    background $orange !important
+    color #ffffff
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
+    width 17px !important
+    height 45px !important
+    background url(../img/down-arrow.png) center no-repeat !important
+    transition: $fast
+    margin-right 13px
+    filter: grayscale(100)
+    .footer &
+        filter: grayscale(0)
+    b
+        display none !important
+
+.select2-container--open
+    .select2-selection__arrow
+        transform: rotate(180deg)
+
+
+/*.select2-search--dropdown
+    display none !important
+    .header__tooltype--search &
+        display block !important*/
+
+.select2-search--dropdown
+    margin-top -50px
+
+.select2-search__field
+    border: 0 !important
+
+.select2-container--default .select2-search--dropdown .select2-search__field
+    height 32px
+    margin-bottom 10px
+
+.select2-dropdown
+    border: 0
+
+.select2-search--dropdown
+    background #ffffff !important
+    padding 0
+
+.header__tooltype--search .select2-container--default .select2-selection--multiple, .select2-container--default .select2-selection--single
+    border: 0
+
+.header__tooltype--search span.select2.select2-container
+    width 310px !important
+
+span#select2-city-38-container
+    border-bottom: 1px solid
+
+.header-drop .select2-search--dropdown
+    display block
+.select2-search--dropdown
+    display none
+
+.selector__footer
+    .select2-selection__rendered
+        border-bottom: 0
+
+.footer
+    .select2
+        border-bottom: 1px solid $orange
+.footer-drop
+    .select2-results
+        padding 6px
+        border: 1px solid $orange
+        background #363535
+    .select2-results__option
+        color $orange !important
+        background transparent !important
+        transition: $fast
+        &.select2-results__option--highlighted
+            color #fff !important
+            background $orange !important

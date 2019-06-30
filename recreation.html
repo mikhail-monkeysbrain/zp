@@ -26,13 +26,52 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-container"><a class="header--logo" href="./"><img src="./dist/img/logo.png" alt="logo"/></a><a class="header--phone" href="tel: +78124256542">+7 (812) 42-565-42</a>
+      <div class="header-container"><a class="header--logo" href="./"><img src="./dist/img/logo.png" alt="logo"/><img class="logo-hover" src="./dist/img/logo-hover.png" alt="logo"/></a><a class="header--phone" href="tel: +78124256542">+7 (812) 42-565-42</a>
         <div class="header--location"><i class="fas fa-map-marker-alt"></i>Санкт-Петербург</div>
-        <div class="header--nav__show"><a class="header--icon i__call" href="javascript:void(0)"></a><a class="header--icon i__search" href="javascript:void(0)"></a><a class="header--icon i__geo" href="javascript:void(0)"></a><a class="header--icon i__price" href="javascript:void(0)"></a>
+        <div class="header--nav__show">
+          <div class="header--icon i__call">
+            <div class="header__tooltype header__tooltype--call">
+              <div class="tooltype__heading--call">Заказать звонок</div>
+              <form class="jsNeedCallHeader">
+                <label>
+                  <input class="jsInputPhone" type="text" placeholder="+7 (___) ___-____"/>
+                </label>
+                <input class="checkbox" id="label-check" type="checkbox" name="label-check"/>
+                <label class="check" for="label-check">Согласие на <a href="javascript:void(0)">обработку персональных данных</a></label>
+                <button class="btn btn--orange">Заказать</button>
+              </form>
+            </div>
+          </div>
+          <div class="header--icon i__search">
+            <div class="header__tooltype header__tooltype--search">
+              <select class="selector__header">
+                <option value=""></option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+              </select>
+            </div>
+          </div>
+          <div class="header--icon i__geo">
+            <div class="header__tooltype header__tooltype--lk"><a href="#cb-user-login">Личный кабинет туриста</a>
+              <div class="hr"></div><a href="#cb-ta-login">Личный кабинет агента</a>
+            </div>
+          </div>
+          <div class="header--icon i__price">
+            <div class="header__tooltype header__tooltype--price">
+              <div class="tooltype__heading">Курс на 24.05.2019</div><span>1€ = 75,00₽</span><span>1€ = 75,00₽</span>
+            </div>
+          </div>
         </div>
         <div class="header--nav-toggler header--icon"><i class="fas fa-bars"></i></div>
       </div>
     </header>
+    <div class="header-drop"></div>
     <nav class="nav__main">
       <ul class="nav__main--depth-0">
         <li class="depth-active"><a href="javascript:void(0)">Агентствам</a>
@@ -142,69 +181,479 @@
         <section class="breadcrumbs"><a class="breadcrumbs--item" href="./">Главная</a><a class="breadcrumbs--item" href="javscript:void(0)">Виды отдыха</a><a class="breadcrumbs--item">Свадьба в Чехии</a></section>
         <!-- season-top-->
         <section class="card-top">
-          <aside class="left-aside">
-            <div class="left-aside__heading">Страны
+          <aside class="left-aside left-aside--card">
+            <div class="col col--revert">
+              <div class="row nopadding">
+                <div class="left-aside__heading">Краткая информация</div>
+                <div class="like">Запомнить</div>
+              </div><span>Откуда: </span><span>Дни проведения: </span><span>Продолжительность: </span><span>Начало: </span><span>Место встречи: </span>
             </div>
-            <ul class="left-aside__list">
-              <li class="left-aside__item"><a href="javascript:void(0)">Чехия</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Венгрия</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Хорватия</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Словакия</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Австрия</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Германия</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Бельгия</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Нидерланды</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Франция</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Швеция</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Польша</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Эстония</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Люксембург</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Германия</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Бельгия</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Нидерланды</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Франция</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Швеция</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Польша</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Эстония</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Люксембург</a></li>
-            </ul>
-            <div class="left-aside__shadow"><img src="dist/img/down-arrow.png" alt="down"/></div>
-            <div class="left-aside__heading">Сезоны
+            <div class="col col--revert">
+              <div class="left-aside__heading">Экскурсионные объекты:</div>
+              <ol>
+                <li>.<span>В</span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>б</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>л</span></li>
+                <li>.<span>ь</span></li>
+                <li>.<span>ш</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>и</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>б</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>л</span></li>
+                <li>.<span>ь</span></li>
+                <li>.<span>ш</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>в</span></li>
+                <li>.<span>л</span></li>
+                <li>.<span>ю</span></li>
+                <li>.<span>б</span></li>
+                <li>.<span>л</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>ы</span></li>
+                <li>.<span>х</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>з</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>Р</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>и</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>р</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>б</span></li>
+                <li>.<span>ы</span></li>
+                <li>.<span>в</span></li>
+                <li>.<span>ш</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>г</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>С</span></li>
+                <li>.<span>Н</span></li>
+                <li>.<span>Г</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>в</span></li>
+                <li>.<span>ы</span></li>
+                <li>.<span>б</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>р</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>ю</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>м</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>П</span></li>
+                <li>.<span>р</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>г</span></li>
+                <li>.<span>у</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>м</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>м</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>п</span></li>
+                <li>.<span>р</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>в</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>д</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>я</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>в</span></li>
+                <li>.<span>я</span></li>
+                <li>.<span>щ</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>д</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>й</span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>в</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>я</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>-</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>р</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>г</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>р</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>ц</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>и</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>п</span></li>
+                <li>.<span>р</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>з</span></li>
+                <li>.<span>д</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>в</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>я</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>б</span></li>
+                <li>.<span>р</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>ч</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>й</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>ц</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>р</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>м</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>.</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>К</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>-</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>п</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>ш</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>б</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>ж</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>ь</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>ш</span></li>
+                <li>.<span>у</span></li>
+                <li>.<span>м</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>ы</span></li>
+                <li>.<span>х</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>р</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>д</span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>в</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>к</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>в</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>и</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>&quot;</span></li>
+                <li>.<span>г</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>р</span></li>
+                <li>.<span>ь</span></li>
+                <li>.<span>к</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>х</span></li>
+                <li>.<span>&quot;</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>в</span></li>
+                <li>.<span>,</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>к</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>-</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>,</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>л</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>м</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>я</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>р</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>п</span></li>
+                <li>.<span>ы</span></li>
+                <li>.<span>,</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>п</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>л</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>м</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>г</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>х</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>л</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>г</span></li>
+                <li>.<span>р</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>ж</span></li>
+                <li>.<span>д</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>к</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>г</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>б</span></li>
+                <li>.<span>р</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>к</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>,</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>у</span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>р</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>в</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>п</span></li>
+                <li>.<span>ы</span></li>
+                <li>.<span>ш</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>у</span></li>
+                <li>.<span>ю</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>в</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>ч</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>р</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>к</span></li>
+                <li>.<span>у</span></li>
+                <li>.<span>,</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>к</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>-</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>с</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>д</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>в</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>м</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>ч</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>л</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>к</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>з</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>ь</span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>я</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>м</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>з</span></li>
+                <li>.<span>д</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>ь</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>в</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>э</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>в</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>ж</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>ы</span></li>
+                <li>.<span>й</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>м</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>м</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>т</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>ж</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>з</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>.</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>В</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>ж</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>л</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>ш</span></li>
+                <li>.<span>ь</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>о</span></li>
+                <li>.<span>д</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>о</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>-</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>к</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>к</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>я</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>В</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>м</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>у</span></li>
+                <li>.<span>ж</span></li>
+                <li>.<span>н</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>с</span></li>
+                <li>.<span>в</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span>д</span></li>
+                <li>.<span>ь</span></li>
+                <li>.<span>б</span></li>
+                <li>.<span>а</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>в</span></li>
+                <li>.<span> </span></li>
+                <li>.<span>Ч</span></li>
+                <li>.<span>е</span></li>
+                <li>.<span>х</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>и</span></li>
+                <li>.<span>.</span></li>
+              </ol>
             </div>
-            <ul class="left-aside__list">
-              <li class="left-aside__item left-aside__item--active"><a href="javascript:void(0)">Новый год</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Майские праздники</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Каникулы</a></li>
-            </ul>
-            <div class="left-aside__shadow"><img src="dist/img/down-arrow.png" alt="down"/></div>
-            <div class="left-aside__heading">Виды отдыха
+            <div class="left-aside__heading">
+              <div class="row">
+                <div class="string">Цена: </div>
+                <div class="string string--big"></div>
+              </div><a class="btn btn--orange" href="javascript:void(0)">Купить</a>
             </div>
-            <ul class="left-aside__list">
-              <li class="left-aside__item"><a href="javascript:void(0)">Экскурсии</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Круизы</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Автобусные туры</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Лечение</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Образование</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Свадьба</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Языковые лагеря</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Горящие туры</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Экскурсии</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Экскурсии</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Круизы</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Автобусные туры</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Лечение</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Образование</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Свадьба</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Языковые лагеря</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Горящие туры</a></li>
-              <li class="left-aside__item"><a href="javascript:void(0)">Экскурсии</a></li>
-            </ul>
-            <div class="left-aside__shadow"><img src="dist/img/down-arrow.png" alt="down"/></div>
+            <div class="print">Версия для печати</div>
           </aside>
           <section class="top-about">
             <h1>Свадьба в Чехии</h1>
             <div class="top-about--top-pic"><img src="./dist/img/married/pr-1.jpg" alt="Новый год в Чехии 1"/><img src="./dist/img/married/pr-2.jpg" alt="Новый год в Чехии 2"/></div>
-            <div class="top-about--slider-pic slider__5">
+            <div class="top-about--slider-pic slider__5 jsCardSlider">
               <div><img src="./dist/img/married/pr-2.jpg" alt=""/></div>
               <div><img src="./dist/img/married/pr-3.jpg" alt=""/></div>
               <div><img src="./dist/img/married/pr-4.jpg" alt=""/></div>
@@ -214,7 +663,15 @@
               <div><img src="./dist/img/married/pr-8.jpg" alt=""/></div>
               <div><img src="./dist/img/married/pr-9.jpg" alt=""/></div>
             </div>
-            <p>Все больше и больше влюбленных из России и стран бывшего СНГ выбирают именно Прагу местом проведения священнодействия - регистрации и празднования брачной церемонии. Кто-то спешит сбежать от шумных родственников и &quot;горьких&quot; тостов, кто-то, ломая стереотипы, после многих лет гражданского брака, устраивает пышную вечеринку, кто-то с детства мечтал оказаться именно здесь в этот важный момент жизни. Важно лишь одно - какая Вам нужна свадьба в Чехии.</p><a class="read-more" href="javascript:void(0)">Читать подробнее</a>
+            <p>Все больше и больше влюбленных из России и стран бывшего СНГ выбирают именно Прагу местом проведения священнодействия - регистрации и празднования брачной церемонии. Кто-то спешит сбежать от шумных родственников и &quot;горьких&quot; тостов, кто-то, ломая стереотипы, после многих лет гражданского брака, устраивает пышную вечеринку, кто-то с детства мечтал оказаться именно здесь в этот важный момент жизни. Важно лишь одно - какая Вам нужна свадьба в Чехии.</p>
+            <div class="descr-hidden">
+              <p>Все больше и больше влюбленных из России и стран бывшего СНГ выбирают именно Прагу местом проведения священнодействия - регистрации и празднования брачной церемонии. Кто-то спешит сбежать от шумных родственников и &quot;горьких&quot; тостов, кто-то, ломая стереотипы, после многих лет гражданского брака, устраивает пышную вечеринку, кто-то с детства мечтал оказаться именно здесь в этот важный момент жизни. Важно лишь одно - какая Вам нужна свадьба в Чехии.</p>
+              <p>Все больше и больше влюбленных из России и стран бывшего СНГ выбирают именно Прагу местом проведения священнодействия - регистрации и празднования брачной церемонии. Кто-то спешит сбежать от шумных родственников и &quot;горьких&quot; тостов, кто-то, ломая стереотипы, после многих лет гражданского брака, устраивает пышную вечеринку, кто-то с детства мечтал оказаться именно здесь в этот важный момент жизни. Важно лишь одно - какая Вам нужна свадьба в Чехии.</p>
+              <p>Все больше и больше влюбленных из России и стран бывшего СНГ выбирают именно Прагу местом проведения священнодействия - регистрации и празднования брачной церемонии. Кто-то спешит сбежать от шумных родственников и &quot;горьких&quot; тостов, кто-то, ломая стереотипы, после многих лет гражданского брака, устраивает пышную вечеринку, кто-то с детства мечтал оказаться именно здесь в этот важный момент жизни. Важно лишь одно - какая Вам нужна свадьба в Чехии.</p>
+              <p>Все больше и больше влюбленных из России и стран бывшего СНГ выбирают именно Прагу местом проведения священнодействия - регистрации и празднования брачной церемонии. Кто-то спешит сбежать от шумных родственников и &quot;горьких&quot; тостов, кто-то, ломая стереотипы, после многих лет гражданского брака, устраивает пышную вечеринку, кто-то с детства мечтал оказаться именно здесь в этот важный момент жизни. Важно лишь одно - какая Вам нужна свадьба в Чехии.</p>
+              <p>Все больше и больше влюбленных из России и стран бывшего СНГ выбирают именно Прагу местом проведения священнодействия - регистрации и празднования брачной церемонии. Кто-то спешит сбежать от шумных родственников и &quot;горьких&quot; тостов, кто-то, ломая стереотипы, после многих лет гражданского брака, устраивает пышную вечеринку, кто-то с детства мечтал оказаться именно здесь в этот важный момент жизни. Важно лишь одно - какая Вам нужна свадьба в Чехии.</p>
+              <p>Все больше и больше влюбленных из России и стран бывшего СНГ выбирают именно Прагу местом проведения священнодействия - регистрации и празднования брачной церемонии. Кто-то спешит сбежать от шумных родственников и &quot;горьких&quot; тостов, кто-то, ломая стереотипы, после многих лет гражданского брака, устраивает пышную вечеринку, кто-то с детства мечтал оказаться именно здесь в этот важный момент жизни. Важно лишь одно - какая Вам нужна свадьба в Чехии.</p>
+            </div><a class="read-more" href="javascript:void(0)"> <span>Читать подробнее</span><span>Скрыть</span></a>
           </section>
         </section>
       </div>
@@ -228,6 +685,18 @@
               <option value="Москва">Москва</option>
               <option value="Екатеринбург">Екатеринбург</option>
               <option value="Казань">Казань</option>
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+              <option value="Москва">Москва</option>
+              <option value="Екатеринбург">Екатеринбург</option>
+              <option value="Казань">Казань</option>
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+              <option value="Москва">Москва</option>
+              <option value="Екатеринбург">Екатеринбург</option>
+              <option value="Казань">Казань</option>
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+              <option value="Москва">Москва</option>
+              <option value="Екатеринбург">Екатеринбург</option>
+              <option value="Казань">Казань</option>
             </select>
           </label>
           <label class="finder__label">
@@ -237,15 +706,27 @@
               <option value="Румыния">Румыния</option>
               <option value="Австрия">Австрия</option>
               <option value="Германия">Германия</option>
+              <option value="Польша">Польша</option>
+              <option value="Румыния">Румыния</option>
+              <option value="Австрия">Австрия</option>
+              <option value="Германия">Германия</option>
+              <option value="Польша">Польша</option>
+              <option value="Румыния">Румыния</option>
+              <option value="Австрия">Австрия</option>
+              <option value="Германия">Германия</option>
+              <option value="Польша">Польша</option>
+              <option value="Румыния">Румыния</option>
+              <option value="Австрия">Австрия</option>
+              <option value="Германия">Германия</option>
             </select>
           </label>
           <label class="finder__label">
             <p>Дата вылета</p>
-            <input class="jsDateStart" type="text" value="25.06.2019"/>
+            <input class="date--single" type="text" value="25.06.2019"/>
           </label>
           <label class="finder__label">
             <p>Дата прилета</p>
-            <input class="jsDateFinish" type="text" value="01.07.2019"/>
+            <input class="date--single" type="text" value="01.07.2019"/>
           </label>
           <label class="finder__label finder__button">
             <button class="btn btn--orange">найти</button>
@@ -532,12 +1013,13 @@
           </div>
           <div class="col col_n2"><a class="footer__mail" href="mailto: info@zlatapraga.ru">info@zlatapraga.ru</a><a class="link-orange tdu" href="javascript:void(0)">Карта сайта</a></div>
           <div class="col col_n3">
-            <select class="selector" name="city">
+            <select class="selector__footer" name="city">
               <option value="Санкт-Петербург">Санкт-Петербург</option>
               <option value="Москва">Москва</option>
               <option value="Екатеринбург">Екатеринбург</option>
               <option value="Казань">Казань</option>
             </select>
+            <div class="footer-drop"></div>
           </div>
           <div class="col col_n4">
             <div class="row footer__widgets">

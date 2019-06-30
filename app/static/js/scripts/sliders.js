@@ -1,38 +1,10 @@
 function _sliderImages () {
-    $('.slider__5').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        centerMode: true,
-        variableWidth: true,
-        centerPadding: '15px',
-        nextArrow: '<button class="btn--prev"></button>',
-        prevArrow: '<button class="btn--next"></button>',
-        responsive: [
-            {
-              breakpoint: 1280,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                variableWidth: false,
-                dots: true,
-                centerMode: false,
-                adaptiveHeight: true
-              }
-            }
-          ]
-      });
-}
-
-function _sliderCards () {
-  $('.jsSliderCards').slick({
+  $('.jsCardSlider').slick({
     infinite: true,
     slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToScroll: 1,
     centerMode: true,
     variableWidth: true,
-    dots: true,
     centerPadding: '15px',
     nextArrow: '<button class="btn--prev"></button>',
     prevArrow: '<button class="btn--next"></button>',
@@ -40,25 +12,78 @@ function _sliderCards () {
         {
           breakpoint: 1280,
           settings: {
-            slidesToShow: 5,
-            slidesToScroll: 5,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-          }
-        },
-        {
-          breakpoint: 1025,
-          settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
             infinite: true,
+            variableWidth: false,
             dots: true,
-            centerMode: true,
+            centerMode: false,
+            adaptiveHeight: true
           }
         }
       ]
   });
+  $('.jsCardSliderShort').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    centerMode: false,
+    variableWidth: true,
+    centerPadding: '10px',
+    nextArrow: '<button class="btn--prev"></button>',
+    prevArrow: '<button class="btn--next"></button>',
+    responsive: [
+        {
+          breakpoint: 1280,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            variableWidth: false,
+            dots: true,
+            centerMode: false,
+            adaptiveHeight: true
+          }
+        }
+      ]
+  });
+}
+
+function _sliderCards () {
+  $('.jsSliderCards').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+  centerMode: true,
+  variableWidth: true,
+  dots: true,
+  centerPadding: '15px',
+  nextArrow: '<button class="btn--prev"></button>',
+  prevArrow: '<button class="btn--next"></button>',
+  responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        centerMode: false,
+      }
+    },
+    {
+      breakpoint: 1010,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        centerMode: true,
+      }
+    }
+  ]});
+
+
   $('.jsSliderCardsLearn').slick({
     infinite: true,
     slidesToShow: 4,

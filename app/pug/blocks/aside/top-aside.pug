@@ -2,6 +2,8 @@ aside.left-aside
 	each item in leftAside
 		.left-aside__heading
 			= item.name
+		.left-aside__shadow.left-aside__shadow--top
+			img(src="dist/img/down-arrow.png", alt="down")
 		ul.left-aside__list
 			each items in item.items
 				if (items.name === 'Новый год')

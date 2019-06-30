@@ -1,0 +1,33 @@
+- var topAboutSlider = 2
+
+section.card-top.card-top--revert
+    include ../aside/card-aside
+
+    section.top-about.top-about--revert
+        h1 #{title}
+        .top-about--top-pic
+            img(src="./dist/img/" + folder + "/pr-1.jpg", alt="Новый год в Чехии 1")
+            img(src="./dist/img/" + folder + "/pr-2.jpg", alt="Новый год в Чехии 2")
+        .top-about--slider-pic.slider__5.slider__5--card.jsCardSliderShort
+            while topAboutSlider < 10
+                div
+                    img(src="./dist/img/" + folder + "/pr-" + topAboutSlider++ + ".jpg", alt="")
+.block-static
+    h3 Описание экскурсии
+    each val in description
+        p
+            =val
+    b СТОИМОСТЬ ВХОДНЫХ БИЛЕТОВ В МУЗЕЙ ИГРУШЕК:
+    ul
+        li
+            span
+            | Дети до 15 лет и люди от 65 и выше - 30 Кч
+        li
+            span
+            | Семейный входной билет (2 взрослых + 2 ребенка до 15 лет): 120 Кч
+        li
+            span
+            | Взрослый с 15 до 65 лет: 70 Кч
+        li
+            span
+            | Туристическая компания оставляет за собой право вносить изменения в программу.

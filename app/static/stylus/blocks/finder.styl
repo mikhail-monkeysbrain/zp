@@ -5,7 +5,7 @@
         background url(../img/finder.jpg) center no-repeat
         background-size cover
         margin 30px 0
-        +media(1025px)
+        +media(1010px)
             height 380px
 
     &__label
@@ -13,8 +13,12 @@
             +media(1279px)
                 position absolute
                 right 0
-                bottom -30px
-            +media(1025px)
+                bottom -35px
+            +media(1279px)
+                display flex
+                justify-content center
+                width 33.33%
+            +media(1010px)
                 position relative
                 right 0
                 left 0
@@ -26,7 +30,13 @@
         +media(1279px)
             width 33.34%
             min-width 333px
-        +media(1025px)
+            display flex
+            flex-direction: column
+            align-items center
+            p
+                align-self: flex-start
+                padding-left calc( ( ( ( (100vw - 30px) / 3) ) - 310px) / 2) !important
+        +media(1010px)
             width 100%
             min-width 270px
             margin-bottom 10px
@@ -39,7 +49,7 @@
             margin 0
             +media(1600px)
                 font-size: 12px
-            +media(1025px)
+            +media(1010px)
                 font-size: 9px
 
     &__button
@@ -49,7 +59,7 @@
             bottom -30px
             width 310px
             min-width 310px
-        +media(1025px)
+        +media(1010px)
             position relative
             right 0
             left 0

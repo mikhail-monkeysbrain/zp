@@ -3,8 +3,8 @@
     height 526px
     background url(../img/form.jpg) center no-repeat
     background-size cover
-    +media(1025px)
-        background url(../img/form.jpg) center left no-repeat
+    +media(1010px)
+        background url(../img/form.jpg) 40% center no-repeat
         background-size: cover
         padding-bottom: 30px
         height: auto
@@ -21,7 +21,7 @@
             align-items flex-start
             padding-top 40px
             max-width calc(100% - 30px)
-        +media(1025px)
+        +media(1010px)
             flex-direction: column
             align-items center
 
@@ -32,7 +32,7 @@
 
     &__heading
         max-width 50%
-        +media(1025px)
+        +media(1010px)
             width 100%
             max-width 100%
             text-align center
@@ -54,7 +54,7 @@
                 font-size: 18px
                 line-height 24px
                 padding-top 50px
-            +media(1025px)
+            +media(1010px)
                 width 100%
                 text-align center
                 padding 20px 0
@@ -67,7 +67,7 @@
         flex-direction: column
         align-items flex-start
         justify-content space-between
-        +media(1025px)
+        +media(1010px)
             width 100%
             max-width 100%
             text-align center
@@ -81,6 +81,7 @@
             border 1px solid #ff8b00
             background-color #ffffff
             padding 10px 17px
+            font-weight 600
             +media(1279px)
                 max-width 100%
 
@@ -110,7 +111,7 @@
             padding 0
             a
                 color $orange
-            +media(1025px)
+            +media(1010px)
                 width 100%
                 text-align center
                 display block
@@ -118,19 +119,15 @@
 ::-webkit-input-placeholder
     opacity 1
     transition: $fast
-    text-shadow: 0 0 .5px #000
 ::-moz-placeholder
     opacity 1
     transition: $fast
-    text-shadow: 0 0 .5px #000
 :-moz-placeholder
     opacity 1
     transition: $fast
-    text-shadow: 0 0 .5px #000
 :-ms-input-placeholder
     opacity 1
     transition: $fast
-    text-shadow: 0 0 .5px #000
 
 :hover::-webkit-input-placeholder
     opacity 0.5

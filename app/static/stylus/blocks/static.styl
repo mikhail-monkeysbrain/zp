@@ -1,0 +1,170 @@
+.static__img
+    margin 35px 0 10px
+    +media(1600px)
+        margin 20px 0 0
+    +media(1279px)
+        margin 10px 0 0
+
+.container--static,
+.block-static
+    padding-bottom 100px
+    +media(1600px)
+        padding-bottom 50px
+    p,
+    a
+        font-size: 16px !important
+        line-height 22px !important
+        padding 0
+        margin 0
+        padding-top 10px
+        +media(1600px)
+            font-size: 14px !important
+            line-height 21px !important
+            padding-top 9px
+        +media(1279px)
+            font-size: 13px !important
+            line-height 20px !important
+            padding-top 9px
+        +media(1010px)
+            font-size: 11px !important
+            line-height 18px !important
+    a.orange
+        color $orange
+        text-decoration underline
+        &:hover
+            text-decoration none
+    b
+        line-height 32px
+        +media(1600px)
+            font-size: 14px
+            line-height 21px
+        +media(1279px)
+            font-size: 13px
+            line-height 20px
+        +media(1010px)
+            font-size: 11px
+            line-height 18px
+    i
+        line-height 22px
+        +media(1600px)
+            font-size: 14px
+            line-height 21px
+        +media(1279px)
+            font-size: 13px
+            line-height 20px
+        +media(1010px)
+            font-size: 11px
+            line-height 18px
+    ul
+        padding 0
+        list-style: none
+    li
+        display flex
+        font-size: 16px
+        line-height 22px
+        +media(1600px)
+            font-size: 14px
+            line-height 21px
+        +media(1279px)
+            font-size: 13px
+            line-height 20px
+        +media(1010px)
+            font-size: 11px
+            line-height 18px
+        span
+            width 10px
+            height 10px
+            border-radius: 50%
+            background $orange
+            margin-right 20px
+            margin-top 10px
+            +media(1600px)
+                margin-top 9px
+            +media(1279px)
+                margin-top 8px
+                width 8px
+                height 8px
+                margin-right 15px
+            +media(1010px)
+                width 6px
+                height 6px
+                margin-top 6px
+
+.table
+    display flex
+    flex-direction: column
+    justify-content flex-start
+    align-items flex-start
+    width 100%
+    margin 20px 0 50px
+
+    &__heading
+        display flex
+        justify-content space-between
+        width 100%
+        .td
+            background $orange !important
+            color #ffffff
+            font-size: 20px
+            font-weight: 700
+            line-height: 35px
+            height 64px
+            +media(1600px)
+                height 52px
+            +media(1279px)
+                height 44px
+                font-size: 14px
+    &__row
+        display flex
+        justify-content space-between
+        width 100%
+    &--x3
+        .td
+            height 85px
+            width 328px
+            flex-shrink: 0
+            display flex
+            justify-content center
+            align-items center
+            margin-left 1px
+            margin-bottom 1px
+            background #f0f0f0
+            +media(1600px)
+                height 59px
+            +media(1279px)
+                height 43px
+                width 293px
+                font-size: 14px
+            +media(1010px)
+                font-size: 10px !important
+                width 25%
+                line-height 1.2
+                justify-content center
+                text-align center
+                padding 5px
+            &:first-child
+                width 549px
+                flex-shrink: 0
+                padding-left 55px
+                text-align left
+                justify-content flex-start
+                +media(1600px)
+                    width 452px
+                +media(1279px)
+                    width 375px
+                    padding-left 49px
+                +media(1010px)
+                    padding-left 7px
+                    width calc(50% - 3px)
+
+.block-static
+    width 100%
+    max-width calc(100% - 465px)
+    padding-bottom 40px
+    padding-left 465px
+    +media(1600px)
+        max-width calc(100% - 340px)
+        padding-left 340px
+    +media(1279px)
+        max-width calc(100% - 30px)
+        padding-left 0

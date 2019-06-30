@@ -1,0 +1,34 @@
+aside.left-aside.left-aside--card
+	.col.col--revert
+		.row.nopadding
+			.left-aside__heading
+				| Краткая информация
+			.like Запомнить
+		span
+			| Откуда: #{from}
+		span
+			| Дни проведения: #{days}
+		span
+			| Продолжительность: #{long}
+		span
+			| Начало: #{start}
+		span
+			| Место встречи: #{place}
+
+	.col.col--revert
+		.left-aside__heading
+			| Экскурсионные объекты:
+		ol
+			each value in descr
+				li
+					| #{from}.
+					span
+						=value
+
+	.left-aside__heading
+		.row
+			.string Цена: 
+			.string.string--big #{price}
+		a.btn.btn--orange(href="javascript:void(0)") Купить
+
+	.print Версия для печати

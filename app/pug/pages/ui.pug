@@ -1,0 +1,39 @@
+extends ../base/layout
+
+block variables
+  - var title = 'Новый год в Чехии'
+  - var type = 'Сезоны'
+  - var descr = 'Празднование наступающего нового года в Чехии начнется еще в первых числах декабря и продлится до конца года. Город превратится в сказочную ярмарку: в каждом магазине откроются распродажи, а в барах будет рекой литься грог и глинтвейн. 26 декабря на улицы выйдут колядующие, и город охватит атмосфера грядущего праздника. 31 декабря все рестораны Праги будут открыты до утра, предлагая гостям увеселительные программы.'
+  - var folder = 'new-year'
+
+block header
+  include ../blocks/header
+block main
+  main.grid
+    .container
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        input.date--single(type="text")
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+  // footer
+  include ../blocks/footer
+
+block scripts
+  include ../base/scripts

@@ -26,13 +26,52 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-container"><a class="header--logo" href="./"><img src="./dist/img/logo.png" alt="logo"/></a><a class="header--phone" href="tel: +78124256542">+7 (812) 42-565-42</a>
+      <div class="header-container"><a class="header--logo" href="./"><img src="./dist/img/logo.png" alt="logo"/><img class="logo-hover" src="./dist/img/logo-hover.png" alt="logo"/></a><a class="header--phone" href="tel: +78124256542">+7 (812) 42-565-42</a>
         <div class="header--location"><i class="fas fa-map-marker-alt"></i>Санкт-Петербург</div>
-        <div class="header--nav__show"><a class="header--icon i__call" href="javascript:void(0)"></a><a class="header--icon i__search" href="javascript:void(0)"></a><a class="header--icon i__geo" href="javascript:void(0)"></a><a class="header--icon i__price" href="javascript:void(0)"></a>
+        <div class="header--nav__show">
+          <div class="header--icon i__call">
+            <div class="header__tooltype header__tooltype--call">
+              <div class="tooltype__heading--call">Заказать звонок</div>
+              <form class="jsNeedCallHeader">
+                <label>
+                  <input class="jsInputPhone" type="text" placeholder="+7 (___) ___-____"/>
+                </label>
+                <input class="checkbox" id="label-check" type="checkbox" name="label-check"/>
+                <label class="check" for="label-check">Согласие на <a href="javascript:void(0)">обработку персональных данных</a></label>
+                <button class="btn btn--orange">Заказать</button>
+              </form>
+            </div>
+          </div>
+          <div class="header--icon i__search">
+            <div class="header__tooltype header__tooltype--search">
+              <select class="selector__header">
+                <option value=""></option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+              </select>
+            </div>
+          </div>
+          <div class="header--icon i__geo">
+            <div class="header__tooltype header__tooltype--lk"><a href="#cb-user-login">Личный кабинет туриста</a>
+              <div class="hr"></div><a href="#cb-ta-login">Личный кабинет агента</a>
+            </div>
+          </div>
+          <div class="header--icon i__price">
+            <div class="header__tooltype header__tooltype--price">
+              <div class="tooltype__heading">Курс на 24.05.2019</div><span>1€ = 75,00₽</span><span>1€ = 75,00₽</span>
+            </div>
+          </div>
         </div>
         <div class="header--nav-toggler header--icon"><i class="fas fa-bars"></i></div>
       </div>
     </header>
+    <div class="header-drop"></div>
     <nav class="nav__main">
       <ul class="nav__main--depth-0">
         <li class="depth-active"><a href="javascript:void(0)">Агентствам</a>
@@ -146,7 +185,18 @@
             <h1>Обучение</h1>
             <p>Чтобы продавать много, легко и быстро – нужно быть профессионалом в своем деле. В равных долях нужно владеть техниками продаж и знать сам турпродукт, его преимущества, сильные и слабые стороны.</p>
             <p>Как получить нужную для работы с туристами информацию?</p>
-            <p>Можно потратить несколько бессонных ночей на изучение необходимой информации, пробежать множество форумов по туризму, перелистнуть сотни страниц каталогов, справочников и рекламных брошюр, чтобы начать разбираться в нюансах отдыха в той или иной стране. А можно пройти специальную подготовку по турпродукту у туроператора, что многие годы успешно работает по данному направлению. Вы сэкономите время, получите ценную и актуальную информацию у профессионалов турбизнеса, имеющих за своими плечами многолетний опыт успешной работы.</p><a class="read-more" href="javascript:void(0)">Читать подробнее</a>
+            <p>Можно потратить несколько бессонных ночей на изучение необходимой информации, пробежать множество форумов по туризму, перелистнуть сотни страниц каталогов, справочников и рекламных брошюр, чтобы начать разбираться в нюансах отдыха в той или иной стране. А можно пройти специальную подготовку по турпродукту у туроператора, что многие годы успешно работает по данному направлению. Вы сэкономите время, получите ценную и актуальную информацию у профессионалов турбизнеса, имеющих за своими плечами многолетний опыт успешной работы.</p>
+            <div class="descr-hidden">
+              <p>Чтобы продавать много, легко и быстро – нужно быть профессионалом в своем деле. В равных долях нужно владеть техниками продаж и знать сам турпродукт, его преимущества, сильные и слабые стороны.</p>
+              <p>Чтобы продавать много, легко и быстро – нужно быть профессионалом в своем деле. В равных долях нужно владеть техниками продаж и знать сам турпродукт, его преимущества, сильные и слабые стороны.</p>
+              <p>Чтобы продавать много, легко и быстро – нужно быть профессионалом в своем деле. В равных долях нужно владеть техниками продаж и знать сам турпродукт, его преимущества, сильные и слабые стороны.</p>
+              <p>Чтобы продавать много, легко и быстро – нужно быть профессионалом в своем деле. В равных долях нужно владеть техниками продаж и знать сам турпродукт, его преимущества, сильные и слабые стороны.</p>
+              <p>Чтобы продавать много, легко и быстро – нужно быть профессионалом в своем деле. В равных долях нужно владеть техниками продаж и знать сам турпродукт, его преимущества, сильные и слабые стороны.</p>
+              <p>Чтобы продавать много, легко и быстро – нужно быть профессионалом в своем деле. В равных долях нужно владеть техниками продаж и знать сам турпродукт, его преимущества, сильные и слабые стороны.</p>
+              <p>Чтобы продавать много, легко и быстро – нужно быть профессионалом в своем деле. В равных долях нужно владеть техниками продаж и знать сам турпродукт, его преимущества, сильные и слабые стороны.</p>
+              <p>Чтобы продавать много, легко и быстро – нужно быть профессионалом в своем деле. В равных долях нужно владеть техниками продаж и знать сам турпродукт, его преимущества, сильные и слабые стороны.</p>
+              <p>Чтобы продавать много, легко и быстро – нужно быть профессионалом в своем деле. В равных долях нужно владеть техниками продаж и знать сам турпродукт, его преимущества, сильные и слабые стороны.</p>
+            </div><a class="read-more" href="javascript:void(0)"> <span>Читать подробнее</span><span>Скрыть</span></a>
           </section>
         </section>
       </div>
@@ -344,12 +394,13 @@
           </div>
           <div class="col col_n2"><a class="footer__mail" href="mailto: info@zlatapraga.ru">info@zlatapraga.ru</a><a class="link-orange tdu" href="javascript:void(0)">Карта сайта</a></div>
           <div class="col col_n3">
-            <select class="selector" name="city">
+            <select class="selector__footer" name="city">
               <option value="Санкт-Петербург">Санкт-Петербург</option>
               <option value="Москва">Москва</option>
               <option value="Екатеринбург">Екатеринбург</option>
               <option value="Казань">Казань</option>
             </select>
+            <div class="footer-drop"></div>
           </div>
           <div class="col col_n4">
             <div class="row footer__widgets">

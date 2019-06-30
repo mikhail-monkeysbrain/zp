@@ -3,23 +3,21 @@
 .footer
 	width 100%
 	background $gray
-	margin-top 100px
-	+media(1279px)
-		margin-top 50px
 
 	.hr
 		width 100%
 		height 1px
 		background #5b5b5b
 		margin 47px 0 35px
-		+media(1025px)
+		+media(1010px)
 			margin 15px 0
 
 	a
 		color #ffffff
 		transition: $fast
+		border-bottom 1px solid transparent
 		&:hover
-			color: $orange
+			border-bottom 1px solid #ffffff
 		+media(1600px)
 			font-size: 13px
 
@@ -56,6 +54,10 @@
 
 	a.link-orange
 		color $orange
+		border: 0 !important
+		text-decoration !important
+		&:hover
+			text-decoration none
 		i
 			color #ffffff
 			margin-right 10px
@@ -74,12 +76,12 @@
 		justify-content space-between
 		align-items center
 		padding-top 52px
-		+media(1025px)
+		+media(1010px)
 			display none !important
 
 	&__middle
 		position relative
-		+media(1025px)
+		+media(1010px)
 			display none !important
 		& + .hr
 			margin 30px 0 5px
@@ -92,7 +94,7 @@
 			font-weight 400
 			+media(1279px)
 				font-size: 10px
-			+media(1025px)
+			+media(1010px)
 				font-size: 8px
 				line-height 1.2
 
@@ -147,19 +149,22 @@
 		&__item
 			width 37px
 			height 37px
-			background $orange
+			background #ff8b00
 			border-radius: 50%
 			display flex
 			justify-content center
 			align-items center
+			transition: $fast
+			border: 0 !important
 			+media(1279px)
 				width 27px
 				height 27px
 			&:hover
-				i
-					color #cccccc
+				background #ec6412
+				border: 0 !important
 			i
 				font-size: 21px
+				color #ffe6c9
 				transition: $fast
 				+media(1279px)
 					font-size: 16px
@@ -195,7 +200,7 @@
 	+media(1279px)
 		width 920px
 		margin 0 auto
-	+media(1025px)
+	+media(1010px)
 		width 260px
 		display flex
 		flex-direction: column
@@ -211,7 +216,7 @@
 		color #707070
 		+media(1279px)
 			font-size: 11px
-		+media(1025px)
+		+media(1010px)
 			font-size: 9px
 	a
 		text-decoration underline
@@ -221,7 +226,7 @@
 .footer__top
 	&--mobile
 		display none
-		+media(1025px)
+		+media(1010px)
 			display flex
 			justify-content space-between
 			align-items center
@@ -239,7 +244,7 @@
 			width 28px
 	&__address
 		display none
-		+media(1025px)
+		+media(1010px)
 			color #ffffff
 			font-size: 13px
 			padding 15px 0
@@ -249,7 +254,7 @@
 	&__nav
 		&--mobile
 			display none
-			+media(1025px)
+			+media(1010px)
 				ul
 					display flex
 					flex-wrap: wrap
@@ -262,7 +267,7 @@
 	&__middle
 		&--mobile
 			display none
-			+media(1025px)
+			+media(1010px)
 				display flex
 				justify-content space-between
 				align-items center
@@ -275,3 +280,6 @@
 	font-size: 13px
 	text-decoration underline
 
+.footer__nav--mobile
+	+media(1010px)
+		display block

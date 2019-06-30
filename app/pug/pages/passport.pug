@@ -1,0 +1,20 @@
+extends ../base/layout
+
+block variables
+  - var title = 'Загранпаспорт'
+  - var type = 'Визы'
+  - var descr = 'Все больше и больше влюбленных из России и стран бывшего СНГ выбирают именно Прагу местом проведения священнодействия - регистрации и празднования брачной церемонии. Кто-то спешит сбежать от шумных родственников и "горьких" тостов, кто-то, ломая стереотипы, после многих лет гражданского брака, устраивает пышную вечеринку, кто-то с детства мечтал оказаться именно здесь в этот важный момент жизни. Важно лишь одно - какая Вам нужна свадьба в Чехии.'
+  - var folder = 'married'
+
+block header
+  include ../blocks/header
+block main
+  main.grid
+    .container.container--static
+        include ../elements/breadcrumbs
+        include ../blocks/static/passport
+  // footer
+  include ../blocks/footer
+
+block scripts
+  include ../base/scripts

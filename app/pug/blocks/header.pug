@@ -3,14 +3,54 @@ block header
     .header-container
       a.header--logo(href="./")
         img(src="./dist/img/logo.png", alt="logo")
+        img(src="./dist/img/logo-hover.png", alt="logo").logo-hover
       a.header--phone(href="tel: +78124256542") +7 (812) 42-565-42
       .header--location
         i.fas.fa-map-marker-alt
         | Санкт-Петербург
       .header--nav__show
-        each item in menu
-          a(href= item.link, class="header--icon i__" +  item.class)
+        .header--icon.i__call
+          .header__tooltype.header__tooltype--call
+            .tooltype__heading--call
+              | Заказать звонок
+            form.jsNeedCallHeader
+              label
+                input.jsInputPhone(type="text" placeholder="+7 (___) ___-____")
+              input.checkbox#label-check(type="checkbox" name="label-check")
+              label.check(for="label-check")
+                | Согласие на 
+                a(href="javascript:void(0)") обработку персональных данных
+              button.btn.btn--orange Заказать
+
+        .header--icon.i__search
+          .header__tooltype.header__tooltype--search
+            select.selector__header
+              option(value="")
+              option(value="123") lorem ipsum
+              option(value="123") lorem ipsum
+              option(value="123") lorem ipsum
+              option(value="123") lorem ipsum
+              option(value="123") lorem ipsum
+              option(value="123") lorem ipsum
+              option(value="123") lorem ipsum
+              option(value="123") lorem ipsum
+
+        .header--icon.i__geo
+          .header__tooltype.header__tooltype--lk
+            a(href="#cb-user-login") Личный кабинет туриста
+            .hr
+            a(href="#cb-ta-login") Личный кабинет агента
+
+        .header--icon.i__price
+          .header__tooltype.header__tooltype--price
+            .tooltype__heading
+              | Курс на 24.05.2019
+            span 1€ = 75,00₽
+            span 1€ = 75,00₽
+
       .header--nav-toggler.header--icon
         i.fas.fa-bars
+
+  .header-drop
 
   include ../elements/main-nav

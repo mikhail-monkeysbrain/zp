@@ -1,26 +1,45 @@
-function _dateStart () {
-    $('.jsDateStart').datepicker($.extend({
-        inline: true,
-        changeYear: true,
-        changeMonth: true,
-        defaultDate: "+5d"
-    },
-     $.datepicker.regional['ru']
-   ));
-}
-
-function _dateFinish () {
-    $('.jsDateFinish').datepicker($.extend({
-        inline: true,
-        changeYear: true,
-        changeMonth: true,
-        defaultDate: "+12d"
-    },
-     $.datepicker.regional['ru']
-   ));
+function _dateSingle () {
+    $('.date--single').daterangepicker({
+        singleDatePicker: true,
+        showDropdowns: false,
+        minYear: 2019,
+        startDate: new Date(),
+        "locale": {
+            "format": "DD.MM.YYYY",
+            "separator": " - ",
+            "applyLabel": "Применить",
+            "cancelLabel": "Отмена",
+            "fromLabel": "От",
+            "toLabel": "До",
+            "customRangeLabel": "Свой диапазон",
+                "daysOfWeek": [
+                    "Вс",
+                    "Пн",
+                    "Вт",
+                    "Ср",
+                    "Чт",
+                    "Пт",
+                    "Сб"
+                ],
+                "monthNames": [
+                    "Январь",
+                    "Февраль",
+                    "Март",
+                    "Апрель",
+                    "Май",
+                    "Июнь",
+                    "Июль",
+                    "Август",
+                    "Сентябрь",
+                    "Октябрь",
+                    "Ноябрь",
+                    "Декабрь"
+                ],
+                "firstDay": 1
+        }
+    })
 }
 
 $(document).ready(
-    _dateStart(),
-    _dateFinish()
+    _dateSingle()
 )
