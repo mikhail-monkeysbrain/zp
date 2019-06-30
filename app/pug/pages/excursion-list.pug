@@ -1,0 +1,33 @@
+extends ../base/layout
+
+block variables
+  - var title = 'Экскурсии'
+  - var folder = 'new-year'
+
+block header
+  include ../blocks/header
+block main
+  main.grid
+    .container
+      //breadcrumbs
+      include ../elements/breadcrumbs
+      section.top-about
+        h1 #{title}
+      .tabs-row
+        a.tab-list.tab-list--active.tab-list--ex(href="javascript:void(0)")
+          img(src="dist/img/services/1.png", alt="Экскурсии")
+          span Экскурсии
+        a.tab-list.tab-list--ex-object(href="/excursion-object-list.html")
+          img(src="dist/img/services/2.png", alt="Эксурсионные объекты")
+          span Эксурсионные объекты
+    //finder
+    include ../blocks/finder-horisontal
+    // single
+    include ../blocks/sliders/single-tour
+    // form
+    include ../blocks/form-footer
+  // footer
+  include ../blocks/footer
+
+block scripts
+  include ../base/scripts
