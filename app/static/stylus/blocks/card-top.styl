@@ -36,6 +36,10 @@
                 padding 0
 
     &--revert
+        width 100%
+        max-width calc(100% - 465px)
+        +media(1600px)
+            max-width calc(100% - 340px)
         +media(1279px)
             width 100%
             max-width 100%
@@ -268,3 +272,13 @@
 div::selection,
 img::selection
     background: transparent
+
+.col--site
+    +media(1279px)
+        margin-left 150px
+    +media(1010px)
+        margin-left 0
+    .btn
+        +media(1279px)
+            margin-bottom 30px
+            margin-top -20px
