@@ -1,4 +1,52 @@
 function _sliderImages () {
+  $('.tickets-slider--x3').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: false,
+    variableWidth: true,
+    nextArrow: '<button class="btn--prev"></button>',
+    prevArrow: '<button class="btn--next"></button>',
+    dots: true,
+    responsive: [
+        {
+          breakpoint: 1280,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            variableWidth: false,
+            dots: true,
+            centerMode: false,
+            adaptiveHeight: true
+          }
+        }
+      ]
+  });
+  $('.tickets-slider--x4').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    centerMode: false,
+    variableWidth: true,
+    nextArrow: '<button class="btn--prev"></button>',
+    prevArrow: '<button class="btn--next"></button>',
+    dots: true,
+    responsive: [
+        {
+          breakpoint: 1280,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            variableWidth: false,
+            dots: true,
+            centerMode: false,
+            adaptiveHeight: true
+          }
+        }
+      ]
+  });
   $('.jsCardSlider').slick({
     infinite: true,
     slidesToShow: 5,

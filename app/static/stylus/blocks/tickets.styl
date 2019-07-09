@@ -1,0 +1,190 @@
+.tickets-slider
+    &--x3
+        width 100%
+        max-width calc(100% - 465px)
+        margin-bottom 15px
+        +media(1600px)
+            max-width calc(100% - 340px)
+        img
+            height 100px
+            width auto
+            margin 0 auto
+            align-self: center
+            +media(1600px)
+                height 65px
+        .tickets__card
+            border 1px solid #f7901e
+            margin-right 23px
+            &__heading
+                background $orange
+        .slick-dots
+            bottom 10px
+    &--x4
+        width 100%
+        margin-bottom 15px
+        margin-top 40px
+        margin-bottom 100px
+        .tickets-slider__item
+            width 22.65vw
+            height 13rem
+            position relative
+            color #ffffff
+            padding 16px 46px
+            font-size 30px
+            font-weight 700
+            text-align left
+            margin-right 23px
+            img
+                position absolute
+                left 0
+                top 0
+                z-index -1
+
+.tickets
+    &__card
+        display flex
+        flex-direction: column
+        width 435px
+        height 229px
+        box-shadow 0 5px 15px -10px rgba(140, 140, 140, 0.26)
+        border-radius 3px
+        background-color #ffffff
+        border 1px solid #5d5d5d
+        margin 52px 0
+        position relative
+        +media(1600px)
+            width 310px
+            height 190px
+        span
+            padding-left 17px
+            font-size 16px
+            font-weight 400
+            line-height 22px
+            +media(1600px)
+                font-size: 14px
+                padding-left 10px
+                transform: translateY(-8px)
+                line-height 18px
+        &__heading
+            background #5d5d5d
+            height 80px
+            color #ffffff
+            font-size 30px
+            font-weight 700
+            display flex
+            align-items center
+            padding-left 17px
+            margin-bottom 15px
+            +media(1600px)
+                font-size: 23px
+                height 65px
+        &--abs
+            color $orange
+            position absolute
+            right 13px
+            bottom 22px
+            text-decoration underline
+            font-size 16px
+            +media(1600px)
+                right 10px
+                bottom 17px
+                font-size: 14px
+    &__row
+        width 100%
+        display flex
+        justify-content space-between
+        align-items flex-start
+
+.sheldue
+    display flex
+    flex-direction: column
+    &__container
+        width 1520px
+        max-width calc(100% - 90px)
+        margin 0 auto
+        .select2
+            .select2-selection
+                border: 1px solid $orange
+        span.select2.select2-container
+            width calc(27vw - 55px) !important
+    &__descr
+        font-size 25px
+        font-weight 400
+        line-height 35px
+        text-align center
+    &__heading
+        height 76px
+        background-color #f7901e
+        color #ffffff
+        font-size 25px
+        font-weight 700
+        text-align center
+        line-height 76px
+        border: 1px solid
+    &__subheading
+        width 100%
+        display flex
+        justify-content space-between
+        align-items center
+        height 50px
+        background-color #f7901e
+        text-align center
+    &__cell
+        font-size 25px
+        height 100%
+        font-weight 700
+        color #ffffff
+        width calc(100% / 11)
+        flex-shrink: 0
+        flex-grow: 1
+        border: 1px solid
+        text-align center
+        line-height 45px
+        &:first-child
+            width calc((100% / 11) * 3)
+    &-body
+        display flex
+        justify-content space-between
+        height 122px
+    &__cell--body
+        font-size 20px
+        height 100%
+        width calc(100% / 11)
+        flex-shrink: 0
+        flex-grow: 1
+        border: 1px solid #ffffff
+        text-align center
+        background #f0f0f0
+        display flex
+        flex-direction: column
+        justify-content center
+        align-items center
+        padding 0 20px
+        hr
+            width 100%
+        &:nth-child(2),
+        &:first-child
+            width calc(100%/7.65)
+        &:nth-child(2)
+            padding 0 50px
+
+.label-check-finder
+    width 120px !important
+    margin 0 !important
+    flex-shrink: 1
+    flex-grow: 0
+    display flex
+    align-items center
+    justify-content space-between
+    position relative
+    top 10px
+    &::before
+        top 15px !important
+    &::after
+        top 4px !important
+    span
+        display block
+        color #353535
+        font-size 16px
+        font-weight 400
+        line-height 1.3

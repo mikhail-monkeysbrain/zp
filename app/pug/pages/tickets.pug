@@ -1,0 +1,22 @@
+extends ../base/layout
+
+block variables
+  - var title = 'Авиабилеты'
+
+block header
+  include ../blocks/header
+block main
+  main.grid
+    .container
+      //breadcrumbs
+      include ../elements/breadcrumbs
+      h1 #{title}
+      // season-top
+      include ../blocks/ticket
+    // form
+    include ../blocks/form-footer
+  // footer
+  include ../blocks/footer
+
+block scripts
+  include ../base/scripts

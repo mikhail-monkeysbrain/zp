@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Авиабилеты</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="dist/img/favicon/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="dist/img/favicon/apple-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="dist/img/favicon/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="dist/img/favicon/apple-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="dist/img/favicon/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="dist/img/favicon/apple-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="dist/img/favicon/apple-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="dist/img/favicon/apple-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/img/favicon/apple-icon-180x180.png"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="dist/img/favicon/android-icon-192x192.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/img/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="dist/img/favicon/favicon-96x96.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/img/favicon/favicon-16x16.png"/>
+    <link rel="manifest" href="dist/img/favicon/manifest.json"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="dist/img/favicon/ms-icon-144x144.png"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="stylesheet" href="dist/css/main.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container"><a class="header--logo" href="./"><img src="./dist/img/logo.png" alt="logo"/><img class="logo-hover" src="./dist/img/logo-hover.png" alt="logo"/></a><a class="header--phone" href="tel: +78124256542">+7 (812) 42-565-42</a>
+        <div class="header--location"><i class="fas fa-map-marker-alt"></i>Санкт-Петербург</div>
+        <div class="header--nav__show">
+          <div class="header--icon i__call">
+            <div class="header__tooltype header__tooltype--call">
+              <div class="tooltype__heading--call">Заказать звонок</div>
+              <form class="jsNeedCallHeader">
+                <label>
+                  <input class="jsInputPhone" type="text" placeholder="+7 (___) ___-____"/>
+                </label>
+                <input class="checkbox" id="label-check" type="checkbox" name="label-check"/>
+                <label class="check" for="label-check">Согласие на <a href="javascript:void(0)">обработку персональных данных</a></label>
+                <button class="btn btn--orange">Заказать</button>
+              </form>
+            </div>
+          </div>
+          <div class="header--icon i__search">
+            <div class="header__tooltype header__tooltype--search">
+              <select class="selector__header">
+                <option value=""></option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+                <option value="123">lorem ipsum</option>
+              </select>
+            </div>
+          </div>
+          <div class="header--icon i__geo">
+            <div class="header__tooltype header__tooltype--lk"><a href="#cb-user-login">Личный кабинет туриста</a>
+              <div class="hr"></div><a href="#cb-ta-login">Личный кабинет агента</a>
+            </div>
+          </div>
+          <div class="header--icon i__price">
+            <div class="header__tooltype header__tooltype--price">
+              <div class="tooltype__heading">Курс на 24.05.2019</div><span>1€ = 75,00₽</span><span>1€ = 75,00₽</span>
+            </div>
+          </div>
+        </div>
+        <div class="header--nav-toggler header--icon"><i class="fas fa-bars"></i></div>
+      </div>
+    </header>
+    <div class="header-drop"></div>
+    <nav class="nav__main">
+      <ul class="nav__main--depth-0">
+        <li class="depth-active"><a href="javascript:void(0)">Агентствам</a>
+          <div class="nav-arrow"></div>
+          <ul class="nav__main--depth">
+            <li><a href="javascript:void(0)">Личный кабинет</a></li>
+            <li><a href="javascript:void(0)">Поиск тура</a></li>
+            <li><a href="javascript:void(0)">Конструктор тура</a></li>
+            <li><a href="javascript:void(0)">Наличие мест на рейсах</a></li>
+            <li><a href="javascript:void(0)">Контакты</a></li>
+            <li><a href="javascript:void(0)">Регистарция агентства</a></li>
+            <li><a href="javascript:void(0)">Печать договора</a></li>
+            <li><a href="javascript:void(0)">Личный кабинет</a></li>
+            <li><a href="javascript:void(0)">Поиск тура</a></li>
+            <li><a href="javascript:void(0)">Конструктор тура</a></li>
+            <li><a href="javascript:void(0)">Наличие мест на рейсах</a></li>
+            <li><a href="javascript:void(0)">Контакты</a></li>
+            <li><a href="javascript:void(0)">Регистарция агентства</a></li>
+            <li><a href="javascript:void(0)">Печать договора</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0)">Туристам</a>
+          <div class="nav-arrow"></div>
+          <ul class="nav__main--depth">
+            <li><a href="javascript:void(0)">Контакты</a></li>
+            <li><a href="javascript:void(0)">Поиск тура</a></li>
+            <li><a href="javascript:void(0)">Наличие мест на рейсах</a></li>
+            <li><a href="javascript:void(0)">Личный кабинет</a></li>
+            <li><a href="javascript:void(0)">Регистарция агентства</a></li>
+            <li><a href="javascript:void(0)">Печать договора</a></li>
+            <li><a href="javascript:void(0)">Конструктор тура</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0)">Страны</a>
+          <div class="nav-arrow"></div>
+          <ul class="nav__main--depth">
+            <li><a href="javascript:void(0)">Личный кабинет</a></li>
+            <li><a href="javascript:void(0)">Поиск тура</a></li>
+            <li><a href="javascript:void(0)">Конструктор тура</a></li>
+            <li><a href="javascript:void(0)">Наличие мест на рейсах</a></li>
+            <li><a href="javascript:void(0)">Контакты</a></li>
+            <li><a href="javascript:void(0)">Регистарция агентства</a></li>
+            <li><a href="javascript:void(0)">Печать договора</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0)">Виды отдыха</a>
+          <div class="nav-arrow"></div>
+          <ul class="nav__main--depth">
+            <li><a href="javascript:void(0)">Контакты</a></li>
+            <li><a href="javascript:void(0)">Поиск тура</a></li>
+            <li><a href="javascript:void(0)">Наличие мест на рейсах</a></li>
+            <li><a href="javascript:void(0)">Личный кабинет</a></li>
+            <li><a href="javascript:void(0)">Регистарция агентства</a></li>
+            <li><a href="javascript:void(0)">Печать договора</a></li>
+            <li><a href="javascript:void(0)">Конструктор тура</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0)">Сезоны</a>
+          <div class="nav-arrow"></div>
+          <ul class="nav__main--depth">
+            <li><a href="javascript:void(0)">Личный кабинет</a></li>
+            <li><a href="javascript:void(0)">Поиск тура</a></li>
+            <li><a href="javascript:void(0)">Конструктор тура</a></li>
+            <li><a href="javascript:void(0)">Наличие мест на рейсах</a></li>
+            <li><a href="javascript:void(0)">Контакты</a></li>
+            <li><a href="javascript:void(0)">Регистарция агентства</a></li>
+            <li><a href="javascript:void(0)">Печать договора</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0)">Авиа</a>
+          <div class="nav-arrow"></div>
+          <ul class="nav__main--depth">
+            <li><a href="javascript:void(0)">Контакты</a></li>
+            <li><a href="javascript:void(0)">Поиск тура</a></li>
+            <li><a href="javascript:void(0)">Наличие мест на рейсах</a></li>
+            <li><a href="javascript:void(0)">Личный кабинет</a></li>
+            <li><a href="javascript:void(0)">Регистарция агентства</a></li>
+            <li><a href="javascript:void(0)">Печать договора</a></li>
+            <li><a href="javascript:void(0)">Конструктор тура</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0)">Визы</a>
+          <div class="nav-arrow"></div>
+          <ul class="nav__main--depth">
+            <li><a href="javascript:void(0)">Личный кабинет</a></li>
+            <li><a href="javascript:void(0)">Поиск тура</a></li>
+            <li><a href="javascript:void(0)">Конструктор тура</a></li>
+            <li><a href="javascript:void(0)">Наличие мест на рейсах</a></li>
+            <li><a href="javascript:void(0)">Контакты</a></li>
+            <li><a href="javascript:void(0)">Регистарция агентства</a></li>
+            <li><a href="javascript:void(0)">Печать договора</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav__main--static-pages">
+        <li><a href="javascript:void(0)">О компании</a></li>
+        <li><a href="javascript:void(0)">Контакты</a></li>
+        <li><a href="javascript:void(0)">Новости</a></li>
+        <li><a href="javascript:void(0)">Документы</a></li>
+        <li><a href="javascript:void(0)">Блог</a></li>
+      </ul>
+    </nav>
+    <div class="nav__main-over"></div>
+    <main class="grid">
+      <div class="container">
+        <!--breadcrumbs-->
+        <section class="breadcrumbs"><a class="breadcrumbs--item" href="./">Главная</a><a class="breadcrumbs--item">Авиабилеты</a>
+        </section>
+        <h1>Авиабилеты</h1>
+        <!-- season-top-->
+        <div class="tickets">
+          <div class="tickets__row">
+            <div class="tickets-slider--x3">
+              <div class="tickets-slider__item tickets__card">
+                <div class="tickets__card__heading">Регистрация на рейс</div><img src="dist/img/air-1.png" alt="Регистрация на рейс"/>
+              </div>
+              <div class="tickets-slider__item tickets__card">
+                <div class="tickets__card__heading">Регистрация на рейс</div><img src="dist/img/air-1.png" alt="Регистрация на рейс"/>
+              </div>
+              <div class="tickets-slider__item tickets__card">
+                <div class="tickets__card__heading">Регистрация на рейс</div><img src="dist/img/air-1.png" alt="Регистрация на рейс"/>
+              </div>
+              <div class="tickets-slider__item tickets__card">
+                <div class="tickets__card__heading">Регистрация на рейс</div><img src="dist/img/air-1.png" alt="Регистрация на рейс"/>
+              </div>
+              <div class="tickets-slider__item tickets__card">
+                <div class="tickets__card__heading">Регистрация на рейс</div><img src="dist/img/air-1.png" alt="Регистрация на рейс"/>
+              </div>
+            </div>
+            <div class="tickets__card tickets__card--register">
+              <div class="tickets__card__heading">Аэропорт Пулково</div><span>Информацию о рейсах можно уточнить</span><span>в справочной службе аэропорта:</span><br/><span>Пулково 1: +7 (812) 337-38-22,</span><span>+7 (812) 337-34-44</span><a class="tickets__card--abs" href="javascript:void(0)">Онлайн-табло</a>
+            </div>
+          </div>
+        </div>
+        <div class="sheldue__container">
+          <h2>Расписание рейсов</h2>
+          <section class="finder finder--horisontal finder--transparent">
+            <div class="container--small container--x5">
+              <label class="finder__label">
+                <p>Город отправления</p>
+                <select class="selector" name="city">
+                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                  <option value="Москва">Москва</option>
+                  <option value="Екатеринбург">Екатеринбург</option>
+                  <option value="Казань">Казань</option>
+                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                  <option value="Москва">Москва</option>
+                  <option value="Екатеринбург">Екатеринбург</option>
+                  <option value="Казань">Казань</option>
+                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                  <option value="Москва">Москва</option>
+                  <option value="Екатеринбург">Екатеринбург</option>
+                  <option value="Казань">Казань</option>
+                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                  <option value="Москва">Москва</option>
+                  <option value="Екатеринбург">Екатеринбург</option>
+                  <option value="Казань">Казань</option>
+                </select>
+              </label>
+              <label class="finder__label">
+                <p>Страна</p>
+                <select class="selector" name="ciuntry">
+                  <option value="Польша">Польша</option>
+                  <option value="Румыния">Румыния</option>
+                  <option value="Австрия">Австрия</option>
+                  <option value="Германия">Германия</option>
+                  <option value="Польша">Польша</option>
+                  <option value="Румыния">Румыния</option>
+                  <option value="Австрия">Австрия</option>
+                  <option value="Германия">Германия</option>
+                  <option value="Польша">Польша</option>
+                  <option value="Румыния">Румыния</option>
+                  <option value="Австрия">Австрия</option>
+                  <option value="Германия">Германия</option>
+                  <option value="Польша">Польша</option>
+                  <option value="Румыния">Румыния</option>
+                  <option value="Австрия">Австрия</option>
+                  <option value="Германия">Германия</option>
+                </select>
+              </label>
+              <label class="finder__label">
+                <p>Страна</p>
+                <select class="selector" name="ciuntry">
+                  <option value="Польша">Польша</option>
+                  <option value="Румыния">Румыния</option>
+                  <option value="Австрия">Австрия</option>
+                  <option value="Германия">Германия</option>
+                  <option value="Польша">Польша</option>
+                  <option value="Румыния">Румыния</option>
+                  <option value="Австрия">Австрия</option>
+                  <option value="Германия">Германия</option>
+                  <option value="Польша">Польша</option>
+                  <option value="Румыния">Румыния</option>
+                  <option value="Австрия">Австрия</option>
+                  <option value="Германия">Германия</option>
+                  <option value="Польша">Польша</option>
+                  <option value="Румыния">Румыния</option>
+                  <option value="Австрия">Австрия</option>
+                  <option value="Германия">Германия</option>
+                </select>
+              </label>
+              <input class="checkbox" id="label-check-finder" type="checkbox" name="label-check-finder"/>
+              <label class="check label-check-finder" for="label-check-finder"><span>Туда</span><span>и обратно</span></label>
+            </div>
+          </section>
+          <div class="sheldue">
+            <div class="sheldue__heading">Рейс Санкт-Петербург - Прага, QS 0887 / OK 4887</div>
+            <div class="sheldue__subheading">
+              <div class="sheldue__cell">Период</div>
+              <div class="sheldue__cell">ПН</div>
+              <div class="sheldue__cell">ВТ</div>
+              <div class="sheldue__cell">СР</div>
+              <div class="sheldue__cell">ЧТ</div>
+              <div class="sheldue__cell">ПТ</div>
+              <div class="sheldue__cell">СБ</div>
+              <div class="sheldue__cell">ВС</div>
+            </div>
+            <div class="sheldue-body">
+              <div class="sheldue__cell--body">c 01.04.2019<br/>по 27.10.2019</div>
+              <div class="sheldue__cell--body">Вылет
+                <hr/>Прилет
+              </div>
+              <div class="sheldue__cell--body">15:00
+                <hr/>17:30
+              </div>
+              <div class="sheldue__cell--body">15:00
+                <hr/>17:30
+              </div>
+              <div class="sheldue__cell--body">15:00
+                <hr/>17:30
+              </div>
+              <div class="sheldue__cell--body">15:00
+                <hr/>17:30
+              </div>
+              <div class="sheldue__cell--body">15:00
+                <hr/>17:30
+              </div>
+              <div class="sheldue__cell--body">15:00
+                <hr/>17:30
+              </div>
+              <div class="sheldue__cell--body">15:00
+                <hr/>17:30
+              </div>
+            </div>
+            <div class="sheldue-body">
+              <div class="sheldue__cell--body">c 01.04.2019<br/>по 27.10.2019</div>
+              <div class="sheldue__cell--body">Вылет
+                <hr/>Прилет
+              </div>
+              <div class="sheldue__cell--body">15:00
+                <hr/>17:30
+              </div>
+              <div class="sheldue__cell--body">15:00
+                <hr/>17:30
+              </div>
+              <div class="sheldue__cell--body">15:00
+                <hr/>17:30
+              </div>
+              <div class="sheldue__cell--body">15:00
+                <hr/>17:30
+              </div>
+              <div class="sheldue__cell--body">15:00
+                <hr/>17:30
+              </div>
+              <div class="sheldue__cell--body">15:00
+                <hr/>17:30
+              </div>
+              <div class="sheldue__cell--body">15:00
+                <hr/>17:30
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>Авиакомпании
+          <div class="tickets-slider--x4">
+            <div class="tickets-slider__item">Smartwings<img src="dist/img/company.jpg" alt="Регистрация на рейс"/></div>
+            <div class="tickets-slider__item">Smartwings<img src="dist/img/company.jpg" alt="Регистрация на рейс"/></div>
+            <div class="tickets-slider__item">Smartwings<img src="dist/img/company.jpg" alt="Регистрация на рейс"/></div>
+            <div class="tickets-slider__item">Smartwings<img src="dist/img/company.jpg" alt="Регистрация на рейс"/></div>
+            <div class="tickets-slider__item">Smartwings<img src="dist/img/company.jpg" alt="Регистрация на рейс"/></div>
+          </div>
+        </h2>
+      </div>
+      <!-- form-->
+      <section class="form-footer">
+        <div class="form-footer__container">
+          <div class="form-footer__heading">
+            <h2>Остались вопросы?</h2>
+            <p class="form-footer__heading--description">Заполните форму и мы ответим Вам<br/>в течение 10 минут</p>
+          </div>
+          <form class="form-footer__form">
+            <input type="text" name="fromFooterName" placeholder="Ваше имя*"/>
+            <input class="jsInputMail" type="email" name="fromFooterMail" placeholder="Ваш Email*"/>
+            <input class="jsInputPhone" type="text" name="fromFooterPhone" placeholder="Ваш телефон*"/>
+            <textarea name="fromFooterQuest" placeholder="Ваш вопрос*"></textarea><span>* - поля обязательные для заполнения</span><span>Нажимая конпку Отправить, вы даете согласие <a href="javascript:void(0)">на обработку персональных даных</a></span>
+            <button class="form-submit btn btn--orange" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- footer-->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__top row">
+          <div class="col col_n1">
+            <div class="footer__phone">Единый многоканальный телефон <a href="tel:+78124256542">+7 (812) 42-565-42</a></div>
+            <div class="row"><a class="link-orange tdu" href="javascript:void(0)">
+                <i class="fab fa-whatsapp"></i>WhatsApp</a><a class="link-orange tdu" href="javascript:void(0)">
+                <i class="fab fa-viber"></i>Viber</a><a class="link-orange tdu" href="tel:+79013068679">+7 (901) 306-86-79</a></div>
+          </div>
+          <div class="col col_n2"><a class="footer__mail" href="mailto: info@zlatapraga.ru">info@zlatapraga.ru</a><a class="link-orange tdu" href="javascript:void(0)">Карта сайта</a></div>
+          <div class="col col_n3">
+            <select class="selector__footer" name="city">
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+              <option value="Москва">Москва</option>
+              <option value="Екатеринбург">Екатеринбург</option>
+              <option value="Казань">Казань</option>
+            </select>
+            <div class="footer-drop"></div>
+          </div>
+          <div class="col col_n4">
+            <div class="row footer__widgets">
+              <div class="link-orange footer-currency">Курс валюты<span>1€ = 319,81Ft</span><span>1€ = 319,81Ft</span><span>1€ = 319,81Ft</span></div>
+              <div class="link-orange footer-weather">Погода<span>
+                  <i class="fas fa-cloud-sun"></i>+12</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__top--mobile"><a class="footer__logo" href="./"><img src="dist/img/footer-logo.png" alt="logo"/></a>
+          <div class="footer__contacts"><a href="tel: +79000000000"><img src="dist/img/footer-phone.png" alt="phone"/></a><a href="tel: +79000000000"><img src="dist/img/whatsapp.png" alt="whatsapp"/></a><a href="tel: +79000000000"><img src="dist/img/viber.png" alt="viber"/></a></div>
+        </div>
+        <div class="footer__address"><i class="fas fa-map-marker-alt"></i>Санкт-Петербург, ул.Казанская, 5</div>
+        <div class="footer__nav--mobile">
+          <ul>
+            <li><a href="javascript:void(0)">О компании</a></li>
+            <li><a href="javascript:void(0)">Туры</a></li>
+            <li><a href="javascript:void(0)">Все о Чехии</a></li>
+            <li><a href="javascript:void(0)">Отели</a></li>
+            <li><a href="javascript:void(0)">Экскурсии</a></li>
+            <li><a href="javascript:void(0)">Виза</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="hr"></div>
+      <div class="footer__container">
+        <div class="footer__middle row">
+          <div class="col col_n1">
+            <div class="row">
+              <nav class="footer__nav">
+                <div class="link-orange">О компании</div><a href="javascript:void(0)">О компании</a><a href="javascript:void(0)">Блог</a><a href="javascript:void(0)">Наша команда</a><a href="javascript:void(0)">Почему выбирают нас</a><a href="javascript:void(0)">Наши награды</a><a href="javascript:void(0)">СМИ о нас</a><a href="javascript:void(0)">Финансовые гарантии и СОУТ</a>
+              </nav>
+              <nav class="footer__nav">
+                <div class="link-orange">Туры</div><a href="javascript:void(0)">Майские праздники</a><a href="javascript:void(0)">Туры в Прагу</a><a href="javascript:void(0)">Туры в Будапешт</a><a href="javascript:void(0)">Лечение в Чехении</a><a href="javascript:void(0)">Лечение в Венгрии</a><a href="javascript:void(0)">Лечение в Словакии</a><a href="javascript:void(0)">Свадьба в Чехии</a><a href="javascript:void(0)">Образование в Чехии</a><a href="javascript:void(0)">Языковые лагеря</a><a href="javascript:void(0)">Отдых на природе</a><a href="javascript:void(0)">Новый год в Чехии</a><a href="javascript:void(0)">Каникулы в Чехи</a><a href="javascript:void(0)">Фильтр туров</a>
+              </nav>
+            </div>
+          </div>
+          <div class="col col_n2">
+            <nav class="footer__nav">
+              <div class="link-orange">Все о Чехии</div><a href="javascript:void(0)">О Чехии</a><a href="javascript:void(0)">Города Чехии</a><a href="javascript:void(0)">FAQ</a><a href="javascript:void(0)">Статьи</a><a href="javascript:void(0)">Показания к лечению</a><a href="javascript:void(0)">Курорты Чехии</a><a href="javascript:void(0)">Курорты Словакии</a><a href="javascript:void(0)">Курорты Венгрии</a><a href="javascript:void(0)">Курорты Словении</a><a href="javascript:void(0)">Курорты Литвы</a><a href="javascript:void(0)">Лечение в Чехии</a>
+            </nav>
+          </div>
+          <div class="col col_n3">
+            <nav class="footer__nav">
+              <div class="link-orange">Отели</div><a href="javascript:void(0)">Отели Праги</a><a href="javascript:void(0)">Отели Будапешта</a><a href="javascript:void(0)">Отели и санатории курортов</a><a href="javascript:void(0)">Отели в горах</a><a href="javascript:void(0)">Отели на озерах</a>
+            </nav><br/>
+            <nav class="footer__nav">
+              <div class="link-orange">Экскурсии</div><a href="javascript:void(0)">Экскурсии в Чехии</a><a href="javascript:void(0)">Экскурсии в Венгрииии курортов</a><a href="javascript:void(0)">Экскурсии в Австрии</a><a href="javascript:void(0)">Экусурсионые объекты</a>
+            </nav>
+          </div>
+          <div class="col col_n4">
+            <nav class="footer__nav">
+              <div class="link-orange">Виза</div><a href="javascript:void(0)">Общая информация</a><a href="javascript:void(0)">Виза в Чехию</a><a href="javascript:void(0)">Виза в Словакию</a><a href="javascript:void(0)">Виза в Венгрию</a><a href="javascript:void(0)">Заграничный паспорт</a><a href="javascript:void(0)">Страхование</a>
+            </nav>
+          </div>
+          <div class="footer__soical footer__soical--absolute"><a class="footer__soical__item footer__soical--tg" href="javascript:void(0)"><i class="fab fa-telegram-plane"></i></a><a class="footer__soical__item footer__soical--inst" href="javascript:void(0)"><i class="fab fa-instagram"></i></a><a class="footer__soical__item footer__soical--fb" href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a><a class="footer__soical__item footer__soical--vk" href="javascript:void(0)"><i class="fab fa-vk"></i></a></div>
+        </div>
+        <div class="footer__middle--mobile"><a class="full-site" href="javascript:void(0)">Полная версия сайта</a>
+          <div class="footer__soical"><a class="footer__soical__item footer__soical--tg" href="javascript:void(0)"><i class="fab fa-telegram-plane"></i></a><a class="footer__soical__item footer__soical--inst" href="javascript:void(0)"><i class="fab fa-instagram"></i></a><a class="footer__soical__item footer__soical--fb" href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a><a class="footer__soical__item footer__soical--vk" href="javascript:void(0)"><i class="fab fa-vk"></i></a></div>
+        </div>
+      </div>
+      <div class="hr"></div>
+      <div class="footer__container">
+        <div class="footer__bottom">
+          <p>Вся информация дана в рекламных целях и не является публичной офертой. Вся информация, размещенная на сайте, является собственностью ООО "Злата Прага". Копирование, передача, распространение данной информации возможно только с согласия ООО "Злата Прага".</p>
+        </div>
+      </div>
+    </footer>
+    <div class="footer__container">
+      <div class="footer__after">
+        <p>© Официальный сайт, ООО "Злата Прага", 2013</p>
+        <p>Разработка - <a href="javascript:void(0)">Siberia | Brand Identity & Web</a></p>
+        <p>Верстка & Программинг - <a href="javascript:void(0)">Artrix</a></p>
+      </div>
+    </div>
+    <script src="dist/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/299c3469e1.js"></script>
+  </body>
+</html>

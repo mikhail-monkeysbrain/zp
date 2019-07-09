@@ -1,0 +1,68 @@
+.tickets
+    .tickets__row
+        .tickets-slider--x3
+            - var tickets = 5
+            - for (var tickets_i=1; tickets_i<=tickets; tickets_i++)
+                .tickets-slider__item.tickets__card
+                    .tickets__card__heading Регистрация на рейс
+                    img(src="dist/img/air-1.png", alt="Регистрация на рейс")
+
+        .tickets__card.tickets__card--register
+            .tickets__card__heading Аэропорт Пулково
+            span Информацию о рейсах можно уточнить
+            span в справочной службе аэропорта:
+            br
+            span Пулково 1: +7 (812) 337-38-22,
+            span +7 (812) 337-34-44
+            a(href="javascript:void(0)").tickets__card--abs Онлайн-табло
+
+.sheldue__container
+    h2 Расписание рейсов
+    include finder-transparent
+
+    .sheldue
+        .sheldue__heading
+            | Рейс Санкт-Петербург - Прага, QS 0887 / OK 4887
+        .sheldue__subheading
+            .sheldue__cell
+                | Период
+            .sheldue__cell
+                | ПН
+            .sheldue__cell
+                | ВТ
+            .sheldue__cell
+                | СР
+            .sheldue__cell
+                | ЧТ
+            .sheldue__cell
+                | ПТ
+            .sheldue__cell
+                | СБ
+            .sheldue__cell
+                | ВС
+        - var sheldue_row = 2
+        - for (var b=1; b<=sheldue_row; b++)
+            .sheldue-body
+                .sheldue__cell--body
+                    | c 01.04.2019
+                    br
+                    | по 27.10.2019
+                .sheldue__cell--body
+                    | Вылет
+                    hr
+                    | Прилет
+                - var sheldue_cell = 7
+                - for (var a=1; a<=sheldue_cell; a++)
+                    .sheldue__cell--body
+                        | 15:00
+                        hr
+                        | 17:30
+
+
+h2 Авиакомпании
+    .tickets-slider--x4
+        - var tickets = 5
+        - for (var tickets_i=1; tickets_i<=tickets; tickets_i++)
+            .tickets-slider__item
+                | Smartwings
+                img(src="dist/img/company.jpg", alt="Регистрация на рейс")
