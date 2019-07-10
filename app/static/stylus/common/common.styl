@@ -144,6 +144,7 @@ input
   border-radius 3px
   border: 2px solid
   overflow hidden
+  font-weight 600
   &::before
     content: ''
     display block
@@ -183,6 +184,7 @@ input
       font-size 28px
       line-height 80px
       padding-top 0
+      text-transform none
       +media(1600px)
         width 262px
         height 68px
@@ -200,17 +202,18 @@ input
 .services
   width 1790px
   max-width calc(100% - 90px)
-  margin 105px auto
+  margin 150px auto 90px
   display flex
   justify-content space-between
   align-items center
   +media(1600px)
     width 1300px
-    margin 70px auto
+    margin 120px auto 70px
     max-width calc(100% - 30px)
   +media(1279px)
     width 100%
     flex-wrap: wrap
+    margin 70px auto 50px
   +media(960px)
     margin-bottom 0
   &__item
@@ -364,7 +367,8 @@ input
     +media(1010px)
       font-size: 10px
       line-height 1.2
-      width 80px
+      width 100%
+      text-align center
   img
     width auto
     height 34px
@@ -411,3 +415,6 @@ ul.orange-list
         width 6px
         height 6px
         margin-top 2px
+
+.orange-list.notop
+  margin-top 0

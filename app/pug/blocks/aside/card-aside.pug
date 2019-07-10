@@ -1,82 +1,82 @@
 aside.left-aside.left-aside--card
-	if healing
-		.col.col--revert
-			.row.nopadding
-				.left-aside__heading
-					| Краткая информация
-				.like Запомнить
-			span
-				| Дни заезда: #{days}
-			span
-				| Продолжительность: #{long}
+  if healing
+    .col.col--revert
+      .row.nopadding
+        .left-aside__heading
+          | Краткая информация
+        .like Запомнить
+      span
+        | Дни заезда: #{days}
+      span
+        | Продолжительность: #{long}
 
-		.col.col--revert
-			.left-aside__heading
-				| Экскурсионные объекты:
-			ul.orange-list
-				each value in descr
-					li
-						| #{from}
-						span
-						=value
+    .col.col--revert
+      .left-aside__heading
+        | Экскурсионные объекты:
+      ul.orange-list.notop
+        each value in descr
+          li
+            | #{from}
+            span
+            =value
 
-		.left-aside__heading
-			a.btn.btn--orange(href="javascript:void(0)") Купить
+    .left-aside__heading
+      a.btn.btn--orange(href="javascript:void(0)") Купить
 
-		.print Версия для печати
-
-
-
-	else if from
-		.col.col--revert
-			.row.nopadding
-				.left-aside__heading
-					| Краткая информация
-				.like Запомнить
-			span
-				| Откуда: #{from}
-			span
-				| Дни проведения: #{days}
-			span
-				| Продолжительность: #{long}
-			span
-				| Начало: #{start}
-			span
-				| Место встречи: #{place}
-
-		.col.col--revert
-			.left-aside__heading
-				| Экскурсионные объекты:
-			ol
-				each value in descr
-					li
-						| #{from}.
-						span
-							=value
+    .print Версия для печати
 
 
-		.left-aside__heading
-			.row
-				.string Цена: 
-				.string.string--big #{price}
-			a.btn.btn--orange(href="javascript:void(0)") Купить
 
-		.print Версия для печати
+  else if from
+    .col.col--revert
+      .row.nopadding
+        .left-aside__heading
+          | Краткая информация
+        .like Запомнить
+      span
+        | Откуда: #{from}
+      span
+        | Дни проведения: #{days}
+      span
+        | Продолжительность: #{long}
+      span
+        | Начало: #{start}
+      span
+        | Место встречи: #{place}
+
+    .col.col--revert
+      .left-aside__heading
+        | Экскурсионные объекты:
+      ol
+        each value in descr
+          li
+            | #{from}.
+            =value
 
 
-	else if site
-		.col.col--revert
-			.row.nopadding
-				.left-aside__heading
-					| Краткая информация:
-				.like Запомнить
-			span
-				| #{shortDescr}
-		.col.col--revert.col--site
-			.left-aside__heading
-				| Официальный сайт:
-			a.black-link(href =site) #{site}
-			br
-			a.btn.btn--orange(href="javascript:void(0)") Купить
+    .left-aside__heading
+      .row
+        .string Цена: 
+        .string.string--big #{price}
+      a.btn.btn--orange(href="javascript:void(0)") Купить
 
-			.print Версия для печати
+    .print Версия для печати
+
+
+  else if site
+    .col.col--revert
+      .row.nopadding
+        .left-aside__heading
+          | Краткая информация:
+        .like Запомнить
+      span
+        | #{shortDescr}
+    .col.col--revert.col--site
+      .left-aside__heading
+        | Официальный сайт:
+      a.black-link(href =site) #{site}
+      br
+      br
+      a.btn.btn--orange(href="javascript:void(0)") Купить
+
+      .print Версия для печати

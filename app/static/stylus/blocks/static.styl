@@ -35,12 +35,15 @@
             text-decoration none
     b
         line-height 32px
+        display block
+        padding-top 20px
         +media(1600px)
             font-size: 14px
             line-height 21px
         +media(1279px)
             font-size: 13px
             line-height 20px
+            padding-top 15px
         +media(1010px)
             font-size: 11px
             line-height 18px
@@ -221,3 +224,17 @@
                         padding-left 20px
                     +media(1279px)
                         width 50%
+
+.block-static b, .container--static b
+  & + ul
+    margin-top 8px
+
+.notop
+  margin-top -50px
+  +media(1279px)
+    margin-top 0
+
+.col--site
+  .btn
+    +media(1279px)
+      margin-bottom 40px

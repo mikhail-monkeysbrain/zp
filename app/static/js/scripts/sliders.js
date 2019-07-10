@@ -116,7 +116,7 @@ function _sliderCards () {
         slidesToScroll: 1,
         infinite: true,
         dots: true,
-        centerMode: false,
+        centerMode: true,
       }
     },
     {
